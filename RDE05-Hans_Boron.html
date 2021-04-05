@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+
+    <title>HTML - Hyperlinks </title>
+
+</head>
+
+<body>
+    <h1 style="color: darkgreen">Hyperlinks</h1>
+    <h2>Definição</h2>
+    <p>
+        A tag HTML <em>&lt; a &gt;</em> serve para definir links que redirecionam para outras páginas ou para conteúdos
+        da
+        mesma página. Para isso basta emvolver a palavra ou frase que quer transformar em link com a tag <em>&lt; a
+            &gt;</em> e colocar uma localização no atributo <strong>href</strong>.
+    </p>
+    <p>
+        O atributo mais importante da tag <em>&lt; a &gt;</em> é a <strong>href</strong> pela qual é possível indicar a
+        localização do link aonde voçê quer chegar.
+    </p>
+    <hr style="color: white">
+
+    <h3>Abrir link em página diferente</h3>
+    <p>
+        Se quiser que o link abra em uma nova guia, em vez de abrir na mesma como aconteçe por padrão pode escrever
+        <em>_blank</em>
+        no atributo <strong>target</strong> da tag <em>&lt; a &gt;</em>.
+    </p>
+    <span>Exemplo:</span>
+    <figure>
+        <img alt="Exemplo código tag <a>" src="img/ex1.png">
+    </figure>
+    <br>
+
+    <h3>Fazer referências dentro de uma mesma página</h3>
+    <p>
+        Para referenciar um conteúdo dentro da mesma página através de um link, no atributo <strong>href</strong> da tag
+        <em>&lt; a &gt;</em> preciso utilizar o caractér <em>#</em> e definiu um nome após ele.
+        Depois preciso dizer para qual lugar da página este link deve levar. Para isso utilizo o atributo
+        <strong>id</strong> ou <strong>name</strong><code>(deprecated)</code>.
+    </p>
+    <span>Exemplo:</span>
+    <figure>
+        <img alt="Exemplo código referencia com #" src="img/ex02.png">
+    </figure>
+    <figure>
+        <img alt="Exemplo código id" src="img/ex03.png">
+    </figure>
+    <br>
+
+    <h3>Abrir outro arquivo HTML</h3>
+    <p>
+        Basta referenciar o arquivo html que quer abrir com o caminho relativo do arquivo no atributo
+        <strong>href</strong>
+        da tag <em>&lt; a &gt;</em>.
+    </p>
+    <span>Exemplo:</span>
+    <figure>
+        <img alt="Exemplo código arquivo html" src="img/ex04.png">
+    </figure>
+    <br>
+
+    <h3>Hyperlinks para download de arquivo</h3>
+    <p>
+        São links <strong>que apontam</strong> para arquivos e possibilitam realizar <strong>download</strong> desses
+        atrquivos.
+    </p>
+    <span>Exemplo:</span>
+    <figure>
+        <img alt="Exemplo código arquivo download" src="img/ex05.png">
+    </figure>
+
+    <p>Media-Types - é um identificador padrão usado na Internet para indicar o tipo de dado que um arquivo
+        contém. <a href="https://iana.org/assignments/media-types/media-types.xhtml" hreflang="en"
+            target="_blank">Media-Types</a>
+    </p>
+    <br>
+
+    <h3>Hyperlinks para endereço eletrónico</h3>
+    <p>
+        São links <strong>que apontam</strong> para um endereço eletrónico.
+    </p>
+    <span>Exemplo:</span>
+    <figure>
+        <img alt="Exemplo código enviar email" src="img/ex06.png">
+    </figure>
+    <hr>
+    <p style="font-size: 14px;">Hans M. Boron</p>
+    <p style="font-size: 14px;">Analise e desenvolvimento de sistemas<br><em style="color: green;">Turma 2020</em></p>
+    <h2 style="color: darkgreen;">Instituto Federal do Paraná Campus Irati</h2>
+    <p>
+        Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,<br>
+        (42) 2104-0203
+    </p>
+</body>
+
+</html>
