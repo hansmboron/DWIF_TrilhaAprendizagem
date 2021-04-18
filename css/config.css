@@ -1,0 +1,9 @@
+:root {
+    --primary: #700070;
+    --primary-trans: rgba(112, 0, 112, .9);
+    --secondary: #FF5D00;
+    --body: #E9EBEE;
+    --link-hover: #2C56BF;
+    --nav-hover: #852685;
+    --title: rgba(0, 0, 0, .7);
+}

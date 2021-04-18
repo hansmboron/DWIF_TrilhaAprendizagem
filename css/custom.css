@@ -1,0 +1,120 @@
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+/*----------------------------
+HEADER*/
+#header nav {
+    width: 100%;
+    font-size: large;
+    background-color: var(--primary);
+    transition: background-color ease-out .3s;
+}
+
+.fix {
+    background-color: var(--primary-trans) !important;
+    box-shadow: 0 0 20px var(--primary);
+}
+
+#header .nav-link.active, #header .dropdown-item.active {
+    background-color: transparent;
+    color: white;
+}
+
+#header .nav-link, #header .dropdown-item {
+    color: #ccc;
+    font-size: large;
+}
+
+#header .nav-link:hover, #header .dropdown-item:hover {
+    color: white;
+    background-color: var(--nav-hover);
+    border-bottom: solid 3px var(--secondary);
+}
+
+#header .dropdown-menu-dark {
+    border-radius: unset;
+    border: none;
+    color: var(--primary);
+    background-color: var(--primary);
+}
+
+/*----------------------------
+MAIN*/
+
+main a {
+    color: var(--secondary);
+    transition: all ease-out .2s;
+}
+
+main a:hover {
+    color: var(--link-hover);
+}
+
+.card-title {
+    color: var(--primary);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--primary);
+}
+
+#mainCard .card-text {
+    font-size: large;
+}
+
+#mainCard section div p {
+    font-size: large;
+}
+
+#btn_top {
+    display: none;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    bottom: 15px;
+    right: 15px;
+    z-index: 9999;
+    border: none;
+    outline: none;
+    background-color: var(--secondary);
+    color: white;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 30px;
+    -webkit-transition: .2s ease-out;
+    -moz-transition: .2s ease-out;
+    transition: .2s ease-out;
+    animation: fadeIn ease 1s;
+}
+#btn_top:hover {
+    opacity: .7;
+    background-color: var(--link-hover) ;
+}
+
+
+/*----------------------------
+FOOTER*/
+footer div div a {
+    text-decoration: none;
+    padding: .5rem;
+}
+
+.bg-principal {
+    background-color: var(--primary);
+}
+
+.ifpr {
+    color: green;
+    font-weight: bold;
+    text-shadow: 1px 1px #FFF;
+}
+
+

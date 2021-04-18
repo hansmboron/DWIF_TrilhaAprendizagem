@@ -1,0 +1,51 @@
+body, html {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--body);
+    margin-top: 40px;
+}
+
+h1 {
+    color: var(--secondary);
+    font-weight: bold;
+}
+
+h2, h3, h4 {
+    color: var(--title);
+    font-weight: bold;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/*para não ficar por baixo da navbar na navegação dentro da pagina*/
+.anchor {
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.button-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    padding: .5rem 1.5rem;
+}
+
+.btn-acessar {
+    background-image: linear-gradient(90deg, var(--primary) 0%, purple 60%, var(--secondary) 100%);
+    background-size: cover;
+    border-color: var(--primary);
+    border-radius: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+}
+
+.btn-acessar:hover {
+    color: #c1d6cc;
+}
+
+.button-secondary {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+    padding: .5rem 1.5rem;
+}

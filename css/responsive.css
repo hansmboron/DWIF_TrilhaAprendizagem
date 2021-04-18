@@ -1,0 +1,14 @@
+@media (max-width: 1199px) {
+    #header .nav-link {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    footer div div {
+        margin-bottom: 1em;
+    }
+}
+
+.cartaz {
+    max-width: 700px;
+}
