@@ -8,10 +8,13 @@ h1 {
     color: var(--secondary);
     font-weight: bold;
 }
-
 h2, h3, h4 {
     color: var(--title);
     font-weight: bold;
+}
+
+h2 {
+    text-decoration: underline;
 }
 
 .text-justify {
