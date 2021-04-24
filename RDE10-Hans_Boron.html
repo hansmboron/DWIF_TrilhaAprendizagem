@@ -14,7 +14,7 @@
           href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
     <link href="css/main.css" rel="stylesheet">
 
-    <title>DevWeb - Multimídias</title>
+    <title>DevWeb - CSS</title>
 </head>
 <body>
 <!--HEADER-->
@@ -62,8 +62,8 @@
                             <li><a class="dropdown-item fw-bold" href="RDE06-Hans_Boron.html">Versionamento de código</a></li>
                             <li><a class="dropdown-item fw-bold" href="RDE07-Hans_Boron.html">Branches e Hospedagem</a></li>
                             <li><a class="dropdown-item fw-bold" href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
-                            <li><a class="dropdown-item fw-bold active" href="RDE09-Hans_Boron.html" aria-current="page">Multimídias</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html" >CSS</a></li>
+                            <li><a class="dropdown-item fw-bold" href="RDE09-Hans_Boron.html" >Multimídias</a></li>
+                            <li><a class="dropdown-item fw-bold active" href="RDE10-Hans_Boron.html" aria-current="page">CSS</a></li>
                         </ul>
                     </li>
                     <li>
@@ -92,121 +92,95 @@
                 <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
-                        <li aria-current="page" class="breadcrumb-item small active">Multimídias</li>
+                        <li aria-current="page" class="breadcrumb-item small active">CSS</li>
                     </ol>
                 </nav>
             </div>
             <div class="card-body mb-3 mx-xl-5">
-                <h1>Multimídias</h1>
-                <h2 class="pt-4">Tag iframe</h2>
+                <h1>CSS (<em>Cascading Style Sheets</em>)</h1>
+                <h2 class="pt-4">Para que serve?</h2>
+                <figure class="figure">
+                    <img alt="OMIF 2021 Banner" class="figure-img img-fluid"
+                         src="img/css.png">
+                </figure>
+                <h4>Definição CSS:</h4>
                 <p>
-                    A tag <code>&lt;iframe&gt;</code> é usada para incorporar outro documento ao documento HTML.
+                    <strong>Cascading Style Sheets</strong> - Folhas de Estilo em Cascata - Tem por objetivo realizar a <strong>Estilização</strong> de conteúdos dde documento HTML. Podem definir fontes, cores, espaçamento dentro outros.
                 </p>
                 <h4>Exemplo:</h4>
-                <p>Incorporar um site dentro do site:</p>
-                <pre><code class="html rounded">
-&lt;iframe src="https://irati.ifpr.edu.br" height="300" width="100%"&gt;&lt;/iframe&gt;
-                </code></pre>
-                <iframe height="300" src="https://irati.ifpr.edu.br" width="100%"></iframe>
-                <br>
-                <p>Incorporar um áudio dentro do site:</p>
-                <pre><code class="html rounded">
-&lt;iframe allow="autoplay" frameborder="no" height="166" scrolling="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/885696448&color=%23865ebe&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-    width="100%"&gt;&lt;/iframe&gt;
-&lt;div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"&gt;
-    &lt;a href="https://soundcloud.com/miguel-queiroga-520265449" style="color: #cccccc; text-decoration: none;" target="_blank"
-       title="Miguel Queiroga"&gt;Miguel Queiroga&lt;/a&gt; · &lt;a
-        href="https://soundcloud.com/miguel-queiroga-520265449/integracao-continua-deploy-continuo-e-github-actions-hipsters-ponto-tech-213"
-        style="color: #cccccc; text-decoration: none;" target="_blank"
-        title="Integração Contínua, Deploy Contínuo e Github Actions - Hipsters Ponto Tech #213"&gt;Integração Contínua, Deploy Contínuo e Github Actions -
-    Hipsters Ponto Tech #213&lt;/a&gt;&lt;/div&gt;
-                </code></pre>
-                <iframe allow="autoplay" frameborder="no" height="166" scrolling="no"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/885696448&color=%23865ebe&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"
-                        width="100%"></iframe>
-                <div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;
-                        white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;
-                        font-weight: 100;">
-                    <a href="https://soundcloud.com/miguel-queiroga-520265449"
-                       style="color: #cccccc; text-decoration: none;"
-                       target="_blank"
-                       title="Miguel Queiroga">Miguel Queiroga</a> · <a
-                        href="https://soundcloud.com/miguel-queiroga-520265449/integracao-continua-deploy-continuo-e-github-actions-hipsters-ponto-tech-213"
-                        style="color: #cccccc; text-decoration: none;" target="_blank"
-                        title="Integração Contínua, Deploy Contínuo e Github Actions - Hipsters Ponto Tech #213">Integração
-                    Contínua, Deploy Contínuo e Github Actions -
-                    Hipsters Ponto Tech #213</a>
-                </div>
-                <br>
-                <p>Incorporar vídeo do Youtube no site:</p>
-                <pre><code class="html rounded">
-&lt;iframe allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen height="315"
-      src="https://www.youtube.com/embed/FFY4V8B4akY"
-      title="YouTube video player"
-      width="560"&gt;
-&lt;/iframe&gt;
-                </code></pre>
-                <iframe allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen
-                        height="315"
-                        src="https://www.youtube.com/embed/FFY4V8B4akY"
-                        title="YouTube video player"
-                        width="560">
-                </iframe>
-                <br>
-                <h2 class="pt-4">Tag video</h2>
-                <p>A tag <code>&lt;video&gt;</code> serve para colocarmos um vídeo no HTML5.</p>
-                <h4>Exemplo:</h4>
-                <pre><code class="html rounded">
-&lt;video poster="video/Bike.jpg" width="320" height="240" autoplay muted&gt;
-    &lt;source src="video/_Bike.mp4" type="video/mp4"&gt;
-    &lt;source src="video/Bike.webm" type="video/webm"&gt;
-    &lt;source src="video/Bike.ogv" type="video/ogv"&gt;
-    Seu navegador não suporta este vídeo!
-&lt;/video&gt;
-                </code></pre>
-                <video autoplay controls height="300" muted poster="video/Bike.jpg" width="530">
-                    <source src="video/_Bike.mp4" type="video/mp4">
-                    <source src="video/Bike.webm" type="video/webm">
-                    <source src="video/Bike.ogv" type="video/ogv">
-                    Seu navegador não suporta este vídeo!
-                </video>
-                <h2 class="pt-4">Tag audio</h2>
-                <p>A tag <code>&lt;audio&gt;</code> serve para colocarmos um áudio no HTML5.</p>
-                <h4>Exemplo:</h4>
-                <pre><code class="html rounded">
-&lt;audio preload="metadata" controls&gt;
-    &lt;source src="audio/Hey_Sailor_-_Letter_Box.ogg" type="audio/ogg"&gt;
-    &lt;source src="audio/Hey_Sailor_-_Letter_Box.mp3" type="audio/mpeg"&gt;
-    &lt;source src="audio/Hey_Sailor_-_Letter_Box.wav" type="audio/wav"&gt;
-    Seu navegador não suporta este áudio!
-&lt;/audio&gt;
-                </code></pre>
-                <audio controls preload="metadata">
-                    <source src="audio/Hey_Sailor_-_Letter_Box.ogg" type="audio/ogg">
-                    <source src="audio/Hey_Sailor_-_Letter_Box.mp3" type="audio/mpeg">
-                    <source src="audio/Hey_Sailor_-_Letter_Box.wav" type="audio/wav">
-                    Seu navegador não suporta este áudio!
-                </audio>
+                <pre><code class="rounded">
+seletor {
+    propriedades: valor;     /*comentário*/
+    propriedades-subpropriedades: valor;
+}
+/*
+seletor - seleciona elemento HTML com base no nome do elemento ao qual o estilo será aplicado
+propriedades - o aspecto específico do elemento que você quer usar como estilo
+valor - a configuração aplicada ao atributo
+*/
 
-                <h2 class="pt-4">Tag picture</h2>
-                <p>A tag <code>&lt;picture&gt;</code> serve para agrupar imagens. Normalmente utilizada para direcionar
-                    resposividade no site.</p>
-                <h4>Exemplo:</h4>
-                <pre><code class="html rounded">
-&lt;picture&gt;
-    &lt;source media="(max-width:400px)" srcset="img/bike_110.jpg"&gt;
-    &lt;source media="(max-width:700px)" srcset="img/bike_320.jpg"&gt;
-    &lt;source media="(max-width:1000px)" srcset="img/bike_640.jpg"&gt;
-    &lt;img src="img/bike_full.jpg" alt="Mtb Por-do-Sol"&gt;
-&lt;/picture&gt;
+/*personalizando tags p*/
+p {
+    color: purple;
+    font-weight: bold;
+    text-align: center;
+}
                 </code></pre>
-                <picture>
-                    <source media="(max-width:400px)" srcset="img/bike_110.jpg">
-                    <source media="(max-width:700px)" srcset="img/bike_320.jpg">
-                    <source media="(max-width:1000px)" srcset="img/bike_640.jpg">
-                    <img alt="Mtb Por-do-Sol" src="img/bike_full.jpg">
-                </picture>
-                <br>
+                <h2 class="pt-4">Três formas de utilizar o CSS</h2>
+                <h3>Inline</h3>
+                <ul>
+                    <li>Os códigos CSS são definidos <strong>dentro de uma tag HTML</strong>.</li>
+                    <li>Afetam somente a tag em que foi definida.</li>
+                </ul>
+                <pre><code class="html rounded">
+&lt;h3 style="font-size: larger; margin-top: 2em; color: darkgreen;"&gt;Exemplo inline&lt;/h3&gt;
+                </code></pre>
+                <h3>Incorporado</h3>
+                <ul>
+                    <li>Os códigos CSS são definidos no cabeçalho <strong>dentro da tag HEAD</strong>.</li>
+                    <li>Afetam somente o ducumento em que foi definido.</li>
+                </ul>
+                <pre><code class="html rounded">
+&lt;head&gt;
+    ...
+    &lt;style&gt;
+        body {
+            font-family: "Noto Sans", serif;
+        }
+        h1, h2 {
+            color: darkred;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+                </code></pre>
+
+                <h3>Externo</h3>
+                <ul>
+                    <li>Os códigos CSS são definidos <strong>em um arquivo externo</strong>.</li>
+                    <li>Afetam todos os documentos que estão linkados ao CSS.</li>
+                </ul>
+
+                <pre><code class="css rounded">
+/* style.css */
+
+body {
+    font-family: "Noto Sans", serif;
+}
+h1, h2 {
+    color: darkred;
+}
+                </code></pre>
+                <pre><code class="html rounded">
+&lt;!-- index.html --&gt;
+
+...
+&lt;head&gt;
+    &lt;link href="style.css" rel="stylesheet"&gt;
+&lt;/head&gt;
+...
+                </code></pre>
+
+
             </div>
 
         </section>
