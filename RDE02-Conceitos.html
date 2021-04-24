@@ -1,77 +1,207 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+          rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
+    <!--    <link href="css/bootstrap.css" rel="stylesheet">-->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"
+          rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
-    <title>Conceitos Fundamentais</title>
+    <title>DevWeb - Conceitos Fundamentais</title>
 </head>
 <body>
-<h1 style="color: darkgreen">Conceitos Fundamentais</h1>
-<p>
-    <a download="pdf/conceitos_fund.pdf" href="pdf/conceitos_fund.pdf" style="color: white; background-color: darkgreen; font-size: larger;" target="_blank"
-       type="application/pdf"><strong>Download PDF</strong></a>
-</p>
-<br>
+<!--HEADER-->
+<header id="header">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img alt="Trilha Aprendizagem Logo" class="d-inline-block align-top" height="55" id="logo"
+                     src="img/logo.png" title="Olimpíada de Matemática dos Institutos Federais">
+                <span class="visually-hidden">Trilha Aprendizagem</span>
+            </a>
 
-<strong>1. Quais foram as principais invenções da década de 1990?</strong>
-<ul>
-    <li>O cientista Tim Berners Lee criou em 1992 a World Wide Web.</li>
-    <li>
-        Surgimento de navegadores como o Internet Explorer, Netscape, Mozilla Firefox, Google Chrome, Opera e Lynx.
-    </li>
-    <li>URL 1994.</li>
-    <li>Javascript 1995.</li>
-    <li>Google 1998.</li>
-</ul>
+            <button aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#toggleMobileMenu" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
+                    <li>
+                        <a class="nav-link" href="index.html" title="Início">
+                            <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                            </svg>
+                            Página Inicial
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle active"
+                           data-bs-toggle="dropdown" href="#"
+                           id="navbarDropdown" role="button" title="Materiais de Estudo">
+                            <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
+                            </svg>
+                            Conteúdos
+                        </a>
+                        <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
+                            <li><a class="dropdown-item fw-bold" href="RDE01-Internet.html">Internet</a>
+                            </li>
+                            <li><a aria-current="page" class="dropdown-item fw-bold active" href="RDE02-Conceitos.html">Conceitos Básicos</a></li>
+                            <li><a class="dropdown-item fw-bold" href="RDE03-Hans_Boron.html">Introdução HTML5</a></li>
+                            <li><a class="dropdown-item fw-bold" href="RDE04-Hans_Boron.html">Imagens e Listas</a></li>
+                            <li><a class="dropdown-item fw-bold" href="RDE05-Hans_Boron.html">Hyperlinks</a></li>
+                            <li><a class="dropdown-item fw-bold" href="RDE06-Hans_Boron.html">Versionamento de
+                                código</a></li>
+                            <li><a class="dropdown-item fw-bold" href="RDE07-Hans_Boron.html">Branches e Hospedagem</a>
+                            </li>
+                            <li><a class="dropdown-item fw-bold"
+                                   href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
+                            <li><a class="dropdown-item fw-bold" href="RDE09-Hans_Boron.html">Multimídias</a></li>
+                            <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html">CSS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="sobre.html"
+                           title="Sobre Mim">
+                            <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                      fill-rule="evenodd"></path>
+                            </svg>
+                            Sobre Mim
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--HEADER-->
+<!--MAIN-->
+<main class="container my-3 ">
+    <div class="col-12" id="mainCard">
+        <section class="card">
+            <div class="card-header pb-0">
+                <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
+                        <li aria-current="page" class="breadcrumb-item small active">Conceitos Fundamentais  </li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="card-body mb-3 mx-xl-5">
+                <h1>Conceitos Fundamentais</h1>
+                <a class="btn-acessar btn" download="pdf/conceitos_fund.pdf" href="pdf/conceitos_fund.pdf"  target="_blank"
+                   type="application/pdf">Download PDF
+                    <svg height="20" width="20" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                              d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
+                              fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+                <br>
+
+                <strong>1. Quais foram as principais invenções da década de 1990?</strong>
+                <ul>
+                    <li>O cientista Tim Berners Lee criou em 1992 a World Wide Web.</li>
+                    <li>
+                        Surgimento de navegadores como o Internet Explorer, Netscape, Mozilla Firefox, Google Chrome, Opera e Lynx.
+                    </li>
+                    <li>URL 1994.</li>
+                    <li>Javascript 1995.</li>
+                    <li>Google 1998.</li>
+                </ul>
 
 
-<p>
-    <strong>2. Explique os protocolos http e https.</strong><br>
-    HTTP significa Protocolo de Transferência de Hipertexto é um protocolo de comunicação utilizado para sistemas de
-    informação de hipermídia, distribuídos e colaborativos. Ele é a base para a comunicação de dados da www.
-    Já o HTTPS possui uma camada a mais de segurança utilizando o protocolo SSL/TLS de forma em que os dados são
-    transmitidos por meio de uma conexão criptografada e é verificada a autenticidade do servidor e do cliente.
-</p>
+                <p>
+                    <strong>2. Explique os protocolos http e https.</strong><br>
+                    HTTP significa Protocolo de Transferência de Hipertexto é um protocolo de comunicação utilizado para sistemas de
+                    informação de hipermídia, distribuídos e colaborativos. Ele é a base para a comunicação de dados da www.
+                    Já o HTTPS possui uma camada a mais de segurança utilizando o protocolo SSL/TLS de forma em que os dados são
+                    transmitidos por meio de uma conexão criptografada e é verificada a autenticidade do servidor e do cliente.
+                </p>
 
-<p>
-    <strong>3. Qual a função do DNS e por que a necessidade de sua existência?</strong><br>
-    DNS significa Sistema de Nomes de Domínio, serve para associar nomes de domínio mais facilmente memorizáveis a
-    endereços de IP numéricos. Por exemplo, se eu digitar www.google.com entrará no Google, se eu digitar 172.217.28.228
-    também entrará no Google, mas pelo nome é mais fácil de lembrar. O servidor DNS recebe o nome do domínio e entrega o
-    local onde está determinada página que está pesquisando.
-</p>
+                <p>
+                    <strong>3. Qual a função do DNS e por que a necessidade de sua existência?</strong><br>
+                    DNS significa Sistema de Nomes de Domínio, serve para associar nomes de domínio mais facilmente memorizáveis a
+                    endereços de IP numéricos. Por exemplo, se eu digitar www.google.com entrará no Google, se eu digitar 172.217.28.228
+                    também entrará no Google, mas pelo nome é mais fácil de lembrar. O servidor DNS recebe o nome do domínio e entrega o
+                    local onde está determinada página que está pesquisando.
+                </p>
 
-<p>
-    <strong>4. Caso não existisse o protocolo TCP/IP quais problemas aconteceriam?</strong><br>
-    Sem este protocolo não teria uma confiabilidade nas troca de informações, já que ele garante que as informações
-    cheguem completas de um local para outro.
-</p>
+                <p>
+                    <strong>4. Caso não existisse o protocolo TCP/IP quais problemas aconteceriam?</strong><br>
+                    Sem este protocolo não teria uma confiabilidade nas troca de informações, já que ele garante que as informações
+                    cheguem completas de um local para outro.
+                </p>
 
-<p>
-    <strong>5. Defina HTML</strong><br>
-    Significa Linguagem de Marcação de Hipertexto. O HTML pode ser interpretado pelos navegadores e serve para a criação
-    de páginas na Web.
-</p>
+                <p>
+                    <strong>5. Defina HTML</strong><br>
+                    Significa Linguagem de Marcação de Hipertexto. O HTML pode ser interpretado pelos navegadores e serve para a criação
+                    de páginas na Web.
+                </p>
 
-<p>
-    <strong>6. Acesse o site do projeto W3 e descreva qual era o propósito do projeto.</strong><br>
-    Este é o primeiro site que surgiu na www e descreve detalhes da World Wide Web, ideia do próprio Berners-Lee. A WWW
-    tinha como objetivo inicial permitir que os profissionais do CERN trocassem informações científicas a partir de seus
-    próprios computadores. O site do The Project serviu de teste para isso.
-</p>
-<br>
-<a download="pdf/conceitos_fund.pdf" href="pdf/conceitos_fund.pdf" style="color: white; background-color: darkgreen; font-size: larger;" target="_blank"
-   type="application/pdf"><strong>Download PDF</strong></a>
-<a href="index.html">Voltar</a>
-<hr>
+                <p>
+                    <strong>6. Acesse o site do projeto W3 e descreva qual era o propósito do projeto.</strong><br>
+                    Este é o primeiro site que surgiu na www e descreve detalhes da World Wide Web, ideia do próprio Berners-Lee. A WWW
+                    tinha como objetivo inicial permitir que os profissionais do CERN trocassem informações científicas a partir de seus
+                    próprios computadores. O site do The Project serviu de teste para isso.
+                </p>
+                <br>
+                <a class="btn-acessar btn" download="pdf/conceitos_fund.pdf" href="pdf/conceitos_fund.pdf"  target="_blank"
+                   type="application/pdf">Download PDF
+                    <svg height="20" width="20" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path clip-rule="evenodd"
+                              d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"
+                              fill-rule="evenodd"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </div>
+</main>
 
-<p style="font-size: 14px;">Hans M. Boron</p>
-<p style="font-size: 14px;">Analise e desenvolvimento de sistemas<br><em style="color: green;">Turma 2020</em></p>
-<h2 style="color: darkgreen;">Instituto Federal do Paraná Campus Irati</h2>
-<p>
-    Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200  |  (42) 2104-0203
-</p>
+<footer class="card-footer bg-principal px-3">
+    <div class="row text-center align-items-center">
+        <span class="text-light fst-italic">by Hans M. Boron</span><br>
+        <h1 class="ifpr">Instituto Federal do Paraná Campus Irati</h1><br>
+        <span class="text-light small">Analise e desenvolvimento de sistemas <em>Turma 2020</em>
+        </span>
+        <span class="text-light small">
+            Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
+            (42) 2104-0203
+        </span>
+    </div>
+</footer>
+
+<!--btn go to top-->
+<div class="text-right ">
+    <button id="btn_top" onclick="toTop()" title="Ir ao topo">
+        <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
+            <path clip-rule="evenodd"
+                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                  fill-rule="evenodd"></path>
+        </svg>
+    </button>
+</div>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+<script>hljs.highlightAll();</script>
+<script src="js/main.js"></script>
 </body>
 </html>
