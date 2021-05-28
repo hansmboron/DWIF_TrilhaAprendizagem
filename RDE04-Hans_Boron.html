@@ -1,88 +1,216 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
-    <title>HTML - Imagens e Listas </title>
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
+    <!--    <link href="css/bootstrap.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <link href="css/main.css" rel="stylesheet">
 
+    <title>DevWeb - Imagens e Listas HTML</title>
 </head>
+
 <body>
-    <h1 style="color: darkgreen">Imagens e Listas</h1>
-    <h2>Imagens</h2>
-    <p><strong>Imagem</strong> representação visual uma pessoa, objeto, paisagem.</p>
-    <p><strong>Imagem digital</strong> é representação de uma imagem bidimensional usando números binários codificados de modo a permitir seu armazenamento, transferência, impressão ou reprodução, e seu processamento por meios eletrônicos.</p>
-    <figure>
-        <img src ="img/paisagem.jpeg" alt="paisagem">
-    </figure>
-    <hr>
+    <!--HEADER-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Trilha Aprendizagem Logo" class="d-inline-block align-top" height="55" id="logo"
+                        src="img/logo.png" title="Trilha Aprendizagem - DevWeb">
+                    <span class="visually-hidden">Trilha Aprendizagem</span>
+                </a>
 
-    <h2>Formato de Imagens</h2>
-    <p>Formatos de imagem são padrões de codificação, compressão e definição que determinam o tipo de arquivo gráfico, tais como, .BPM, .TIFF, .GIF, .SVG, ICO, JPEG, .PNG dentre outros.</p>
-    <hr>
+                <button aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#toggleMobileMenu" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
+                        <li>
+                            <a class="nav-link" href="index.html" title="Início">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                    </path>
+                                </svg>
+                                Página Inicial
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                                href="#" id="navbarDropdown" role="button" title="Materiais de Estudo">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                    </path>
+                                </svg>
+                                Conteúdos
+                            </a>
+                            <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
+                                <li><a class="dropdown-item fw-bold" href="RDE01-Internet.html">Internet</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE02-Conceitos.html">Conceitos Básicos</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE03-Hans_Boron.html">Introdução HTML5</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold active" aria-current="page"
+                                        href="RDE04-Hans_Boron.html">Imagens e Listas</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE05-Hans_Boron.html">Hyperlinks</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE06-Hans_Boron.html">Versionamento de
+                                        código</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE07-Hans_Boron.html">Branches e
+                                        Hospedagem</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html">CSS</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE11-Hans_Boron.html">CSS - Seletores
+                                        Personalizados</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE12-Hans_Boron.html">BoxModel</a></li>
 
-    <h2>Licenças e repositórios de Imagens</h2>
-    <p>As licenças <i>Creative Commons</i> são várias licenças públicas que permitem a distribuição gratuita de uma obra protegida por direitos autorais.</p>
-    <figure>
-        <img src="img/licenca.jpg" alt="Creative Commons">
-    </figure>
-    <h3 style="color: green">Repositórios Gratuitos</h3>
-    <ol>
-        <li>Unsplash</li>
-        <li>Wikimedia Commons</li>
-        <li>Pixabay</li>
-        <li>Rawpixel</li>
-        <li>FreePixel</li>
-        <li>Vintage Stock Photos</li>
-    </ol>
-    <hr>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="sobre.html" title="Sobre Mim">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                                Sobre Mim
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HEADER-->
+    <!--MAIN-->
+    <main class="container my-3 ">
+        <div class="col-12" id="mainCard">
+            <section class="card">
+                <div class="card-header pb-0">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
+                            <li aria-current="page" class="breadcrumb-item small active">Images e Listas</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="card-body mb-3 mx-xl-5">
+                    <h1>Imagens e Listas</h1>
+                    <h2 class="pt-4">Images</h2>
+                    <h4>Definição:</h4>
+                    <p><strong>Imagem</strong> representação visual uma pessoa, objeto, paisagem.</p>
+                    <p><strong>Imagem digital</strong> é representação de uma imagem bidimensional usando números
+                        binários codificados de modo a permitir seu armazenamento, transferência, impressão ou
+                        reprodução, e seu processamento por meios eletrônicos.
+                    </p>
 
-    <h2>Marcação de Imagens</h2>
-    <p><em>As <b>tags de imagens e seus parâmetros</b> definem <strong> imagens e suas propriedades.</strong></em></p>
-    <p>Sintaxe:</p>
-    <p>&lt; img src="imagem.extensão" width = "largura" height="altura" alt="descrição" &gt;</p>
+                    <!-- <figure class="figure">
+                        <img alt="..." class="figure-img img-fluid" src="img/css.png">
+                    </figure> -->
+                    <h4>Exemplo:</h4>
+                    <pre><code class="rounded html">
+&lt;figure&gt;
+    &lt;img src="img/paisagem.jpeg" alt="paisagem"&gt;
+&lt;/figure&gt;
+                    </code></pre>
+                    <figure>
+                        <img src="img/paisagem.jpeg" alt="paisagem">
+                    </figure>
+                    <h2 class="pt-4">Formato de Imagens</h2>
+                    <p>Formatos de imagem são padrões de codificação, compressão e definição que determinam o tipo de
+                        arquivo
+                        gráfico, tais como, .BPM, .TIFF, .GIF, .SVG, ICO, JPEG, .PNG dentre outros.</p>
 
-    <p><i>As <b>tags figure e figcaption</b></i> foram definidas a partir do HTML 5.</p>
-    <p>Sintaxe:</p>
-    <figure>
-        <img src ="img/sintaxe_imagem.jpg" alt="Sintaxe tag imagem">
-    </figure>
-    <hr>
+                    <h2 class="pt-4">Licenças e repositórios de Imagens</h2>
+                    <p>As licenças <i>Creative Commons</i> são várias licenças públicas que permitem a distribuição
+                        gratuita de uma
+                        obra protegida por direitos autorais.</p>
+                    <figure>
+                        <img src="img/licenca.jpg" alt="Creative Commons">
+                    </figure>
+                    <h3 class="pt-3">Repositórios Gratuitos</h3>
+                    <ol>
+                        <li>Unsplash</li>
+                        <li>Wikimedia Commons</li>
+                        <li>Pixabay</li>
+                        <li>Rawpixel</li>
+                        <li>FreePixel</li>
+                        <li>Vintage Stock Photos</li>
+                    </ol>
 
-    <h2>Marcação de Favicon</h2>
-    <p>Define um ícone de favoritos que aparece na barra de títulos.</p>
-    <figure>
-        <img src="img/favicon.jpeg" alt="Exemplo de favicon">
-    </figure>
-    <p>Sintaxe:</p>
-    <p>&lt;link rel="icon" href="caminho para o ícone" type="image/x-icon"&gt; </p>
-    <p>Sites:</p>
-    <ul>
-        <li>Icon archive</li>
-        <li>Favicon.cc</li>
-        <li>Favicon.io</li>
-    </ul>
-    <hr>
+                    <h2 class="pt-4">Marcação de Imagens</h2>
+                    <p>As <b>tags de imagens e seus parâmetros</b> definem <strong> imagens e suas
+                            propriedades.</strong>
+                    </p>
+                    <h4>Sintaxe:</h4>
+                    <pre><code class="rounded html">
+&lt;img src="imagem.extensão" width = "largura" height="altura" alt="descrição"&gt;
+                    </code></pre>
+                    <p>As tags <strong>figure</strong> e <strong>figcaption</strong> foram definidas a partir do HTML
+                        5.</p>
+                    <h4>Sintaxe:</h4>
+                    <pre><code class="rounded html">
+&lt;figure&gt;
+    &lt;img src="imagem.extensão" width="largura em pixels" height="altura em pixels" alt="descrição"&gt;
+    &lt;figcaption&gt;Legenda&lt;/figcaption&gt;
+&lt;/figure&gt;
+                    </code></pre>
+                    <figure>
+                        <img src="img/sintaxe_imagem.jpg" alt="Sintaxe tag imagem">
+                    </figure>
 
-    <h2>Marcação de listas</h2>
-    <p><em>As <b>tags de listas</b> definem: <strong> não ordenadas, listas ordenadas e lista detalhada.</strong></em></p>
-    <figure>
-        <img src="img/listas.jpg" alt="Sintaxe listas">
-    </figure>
-    <a href="index.html">Voltar</a>
-    <hr>
+                    <h2 class="pt-4">Marcação de Favicon</h2>
+                    <p>Define um ícone de favoritos que aparece na barra de títulos.</p>
+                    <figure>
+                        <img src="img/favicon.jpeg" alt="Exemplo de favicon">
+                    </figure>
+                    <h4>Sintaxe:</h4>
+                    <pre><code class="rounded html">
+&lt;link rel="icon" href="caminho para o ícone" type="image/x-icon"&gt;
+                    </code></pre>
+                    <h4>Sites:</h4>
+                    <ul>
+                        <li>Icon archive</li>
+                        <li>Favicon.cc</li>
+                        <li>Favicon.io</li>
+                    </ul>
+
+                    <h2 class="pt-4">Marcação de listas</h2>
+                    <p>As <b>tags de listas</b> definem: <strong> não ordenadas, listas ordenadas e lista
+                            detalhada.</strong></p>
+                    <figure>
+                        <img src="img/listas.jpg" alt="Sintaxe listas">
+                    </figure>
+                </div>
+
+            </section>
+        </div>
+    </main>
 
     <footer class="card-footer bg-principal px-3">
         <div class="row text-center align-items-center">
             <span class="text-light fst-italic">by Hans M. Boron</span><br>
             <h1 class="ifpr">Instituto Federal do Paraná Campus Irati</h1><br>
             <span class="text-light small">Analise e desenvolvimento de sistemas <em>Turma 2020</em>
-        </span>
+            </span>
             <span class="text-light small">
-            Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
-            (42) 2104-0203
-        </span>
+                Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
+                (42) 2104-0203
+            </span>
         </div>
     </footer>
 
@@ -91,18 +219,18 @@
         <button id="btn_top" onclick="toTop()" title="Ir ao topo">
             <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
                 <path clip-rule="evenodd"
-                      d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                      fill-rule="evenodd"></path>
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    fill-rule="evenodd"></path>
             </svg>
         </button>
     </div>
 
 
-    <script crossorigin="anonymous"
-            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
