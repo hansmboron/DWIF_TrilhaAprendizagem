@@ -1,117 +1,128 @@
 <!DOCTYPE html>
 <html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
-          rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
-          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
     <!--    <link href="css/bootstrap.css" rel="stylesheet">-->
-    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css"
-          rel="stylesheet">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
     <title>DevWeb - Tags HTML5</title>
 </head>
-<body>
-<!--HEADER-->
-<header id="header">
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0" id="navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <img alt="Trilha Aprendizagem Logo" class="d-inline-block align-top" height="55" id="logo"
-                     src="img/logo.png" title="Olimpíada de Matemática dos Institutos Federais">
-                <span class="visually-hidden">Trilha Aprendizagem</span>
-            </a>
 
-            <button aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler"
-                    data-bs-target="#toggleMobileMenu" data-bs-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="toggleMobileMenu">
-                <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
-                    <li>
-                        <a class="nav-link" href="index.html" title="Início">
-                            <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
-                            </svg>
-                            Página Inicial
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a aria-expanded="false" class="nav-link dropdown-toggle active"
-                           data-bs-toggle="dropdown" href="#"
-                           id="navbarDropdown" role="button" title="Materiais de Estudo">
-                            <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"></path>
-                            </svg>
-                            Conteúdos
-                        </a>
-                        <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
-                            <li><a class="dropdown-item fw-bold" href="RDE01-Internet.html">Internet</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE02-Conceitos.html">Conceitos Básicos</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE03-Hans_Boron.html">Introdução HTML5</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE04-Hans_Boron.html">Imagens e Listas</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE05-Hans_Boron.html">Hyperlinks</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE06-Hans_Boron.html">Versionamento de
-                                código</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE07-Hans_Boron.html">Branches e Hospedagem</a>
-                            </li>
-                            <li><a aria-current="page" class="dropdown-item fw-bold active"
-                                   href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE09-Hans_Boron.html">Multimídias</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html">CSS</a></li>
-                            <li><a class="dropdown-item fw-bold" href="RDE11-Hans_Boron.html">CSS - Seletores Personalizados</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="sobre.html"
-                           title="Sobre Mim">
-                            <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
-                                 xmlns="http://www.w3.org/2000/svg">
-                                <path clip-rule="evenodd"
-                                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
-                                      fill-rule="evenodd"></path>
-                            </svg>
-                            Sobre Mim
-                        </a>
-                    </li>
-                </ul>
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Trilha Aprendizagem Logo" class="d-inline-block align-top" height="55" id="logo"
+                        src="img/logo.png" title="Olimpíada de Matemática dos Institutos Federais">
+                    <span class="visually-hidden">Trilha Aprendizagem</span>
+                </a>
+
+                <button aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#toggleMobileMenu" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
+                        <li>
+                            <a class="nav-link" href="index.html" title="Início">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                    </path>
+                                </svg>
+                                Página Inicial
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                                href="#" id="navbarDropdown" role="button" title="Materiais de Estudo">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                    </path>
+                                </svg>
+                                Conteúdos
+                            </a>
+                            <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
+                                <li><a class="dropdown-item fw-bold" href="RDE01-Internet.html">Internet</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE02-Conceitos.html">Conceitos Básicos</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE03-Hans_Boron.html">Introdução HTML5</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE04-Hans_Boron.html">Imagens e Listas</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE05-Hans_Boron.html">Hyperlinks</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE06-Hans_Boron.html">Versionamento de
+                                        código</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE07-Hans_Boron.html">Branches e
+                                        Hospedagem</a>
+                                </li>
+                                <li><a aria-current="page" class="dropdown-item fw-bold active"
+                                        href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE09-Hans_Boron.html">Multimídias</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html">CSS</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE11-Hans_Boron.html">CSS - Seletores
+                                        Personalizados</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE12-Hans_Boron.html">BoxModel</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="sobre.html" title="Sobre Mim">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                                Sobre Mim
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
-<!--HEADER-->
-<!--MAIN-->
-<main class="container my-3 ">
-    <div class="col-12" id="mainCard">
-        <section class="card">
-            <div class="card-header pb-0">
-                <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
-                        <li aria-current="page" class="breadcrumb-item small active">Tags HTML5</li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="card-body mb-3 mx-xl-5">
-                <h1>Exemplificando algumas Tags HTML</h1>
-                <section>
-                    <h2>table</h2>
-                    <p>A tag <code>&lt;table&gt;</code> define uma tabela em HTML.</p>
-                    <p>
-                        Cada linha da tabela é definida com a tag <code>&lt;tr&gt;</code>. Cada cabeçalho da tabela é
-                        definido com a
-                        tag<code>&lt;th&gt;</code>. Cada célula da tabela é definida com a tag <code>&lt;td&gt;</code>
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+        </nav>
+    </header>
+    <!--HEADER-->
+    <!--MAIN-->
+    <main class="container my-3 ">
+        <div class="col-12" id="mainCard">
+            <section class="card">
+                <div class="card-header pb-0">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
+                            <li aria-current="page" class="breadcrumb-item small active">Tags HTML5</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="card-body mb-3 mx-xl-5">
+                    <h1>Exemplificando algumas Tags HTML</h1>
+                    <section>
+                        <h2>table</h2>
+                        <p>A tag <code>&lt;table&gt;</code> define uma tabela em HTML.</p>
+                        <p>
+                            Cada linha da tabela é definida com a tag <code>&lt;tr&gt;</code>. Cada cabeçalho da tabela
+                            é
+                            definido com a
+                            tag<code>&lt;th&gt;</code>. Cada célula da tabela é definida com a tag
+                            <code>&lt;td&gt;</code>
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;table&gt;
   &lt;tr&gt;
     &lt;th&gt;Nome&lt;/th&gt;
@@ -130,316 +141,323 @@
   &lt;/tr&gt;
 &lt;/table&gt;
                   </code></pre>
-                    <div>
-                        <table>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Sobrenome</th>
-                                <th>Idade</th>
-                            </tr>
-                            <tr>
-                                <td>Jill</td>
-                                <td>Smith</td>
-                                <td>50</td>
-                            </tr>
-                            <tr>
-                                <td>Eve</td>
-                                <td>Jackson</td>
-                                <td>94</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <table>
+                                <tr>
+                                    <th>Nome</th>
+                                    <th>Sobrenome</th>
+                                    <th>Idade</th>
+                                </tr>
+                                <tr>
+                                    <td>Jill</td>
+                                    <td>Smith</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>Eve</td>
+                                    <td>Jackson</td>
+                                    <td>94</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>del</h2>
-                    <p>
-                        A tag <code>&lt;del&gt;</code> define que algum texto foi deletado do documento. Normalmente os
-                        navegadores
-                        colocam um risco no meio da palavra ou frase
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>del</h2>
+                        <p>
+                            A tag <code>&lt;del&gt;</code> define que algum texto foi deletado do documento. Normalmente
+                            os
+                            navegadores
+                            colocam um risco no meio da palavra ou frase
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;p&gt;Minha cor favorita é &lt;del&gt;azul&lt;/del&gt; &lt;ins&gt;verde&lt;/ins&gt;!&lt;/p&gt;
                     </code></pre>
-                    <div>
-                        <p>Minha cor favorita é
-                            <del>azul</del>
-                            <ins>verde</ins>
-                            !
-                        </p>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <p>Minha cor favorita é
+                                <del>azul</del>
+                                <ins>verde</ins>
+                                !
+                            </p>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>ins</h2>
-                    <p>
-                        A tag <code>&lt;ins&gt;</code> define que algum texto foi inserido no documento. Normalmente os
-                        navegadores
-                        representam isso colocando u underline abaixo do texto
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>ins</h2>
+                        <p>
+                            A tag <code>&lt;ins&gt;</code> define que algum texto foi inserido no documento. Normalmente
+                            os
+                            navegadores
+                            representam isso colocando u underline abaixo do texto
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;p&gt;Minha cor favorita é &lt;del&gt;azul&lt;/del&gt; &lt;ins&gt;verde&lt;/ins&gt;!&lt;/p&gt;
                     </code></pre>
-                    <div>
-                        <p>Minha cor favorita é
-                            <del>azul</del>
-                            <ins>verde</ins>
-                            !
-                        </p>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <p>Minha cor favorita é
+                                <del>azul</del>
+                                <ins>verde</ins>
+                                !
+                            </p>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>sub</h2>
-                    <p>
-                        A tag <code>&lt;sub&gt;</code> define um subtexto. Que é um texto menor que aparece abaixo do
-                        nível normal
-                        dos textos comuns.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>sub</h2>
+                        <p>
+                            A tag <code>&lt;sub&gt;</code> define um subtexto. Que é um texto menor que aparece abaixo
+                            do
+                            nível normal
+                            dos textos comuns.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;p&gt;Este texto contém um &lt;sub&gt;subtexto&lt;/sub&gt;.&lt;/p&gt;
                     </code></pre>
-                    <div>
-                        <p>Este texto contém um <sub>subtexto</sub>.</p>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <p>Este texto contém um <sub>subtexto</sub>.</p>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>sup</h2>
-                    <p>
-                        A tag <code>&lt;sup&gt;</code> define o texto sobrescrito. O texto sobrescrito aparece meio
-                        caractere acima da linha
-                        normal e, às vezes, é renderizado em uma fonte menor. Texto sobrescrito pode ser usado para
-                        notas de rodapé.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>sup</h2>
+                        <p>
+                            A tag <code>&lt;sup&gt;</code> define o texto sobrescrito. O texto sobrescrito aparece meio
+                            caractere acima da linha
+                            normal e, às vezes, é renderizado em uma fonte menor. Texto sobrescrito pode ser usado para
+                            notas de rodapé.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;p&gt;Este texto contém um texto &lt;sup&gt;sobretexto&lt;/sup&gt;.&lt;/p&gt;
                     </code></pre>
-                    <div>
-                        <p>Este texto contém um texto <sup>sobretexto</sup>.</p>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <p>Este texto contém um texto <sup>sobretexto</sup>.</p>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>blockquote</h2>
-                    <p>
-                        A tag <code>&lt;blockquote&gt;</code> especifica uma sessão de é citada de outra fonte.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>blockquote</h2>
+                        <p>
+                            A tag <code>&lt;blockquote&gt;</code> especifica uma sessão de é citada de outra fonte.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
 For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization...
 &lt;/blockquote&gt;
                     </code></pre>
-                    <div>
-                        <blockquote cite="http://www.worldwildlife.org/who/index.html">
-                            For 50 years, WWF has been protecting the future of nature. The world's leading conservation
-                            organization, WWF works in 100 countries and is supported by 1.2 million members in the
-                            United States
-                            and close to 5 million globally.
-                        </blockquote>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <blockquote cite="http://www.worldwildlife.org/who/index.html">
+                                For 50 years, WWF has been protecting the future of nature. The world's leading
+                                conservation
+                                organization, WWF works in 100 countries and is supported by 1.2 million members in the
+                                United States
+                                and close to 5 million globally.
+                            </blockquote>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>q</h2>
-                    <p>
-                        A tag <code>&lt;q&gt;</code> define uma citação curta. Normalmente o Navegador coloca "aspas"
-                        por volta da citação.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>q</h2>
+                        <p>
+                            A tag <code>&lt;q&gt;</code> define uma citação curta. Normalmente o Navegador coloca
+                            "aspas"
+                            por volta da citação.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;p&gt;
 O Objetivo da WWF é:
     &lt;q&gt;Construir um futuro onde as pessoas vivam em harmonia com a natureza.&lt;/q&gt;
     Nós esperamos que ela tenha sucesso.
 &lt;/p&gt;
                     </code></pre>
-                    <div>
-                        <p>O Objetivo da WWF é:
-                            <q>Construir um futuro onde as pessoas vivam em harmonia com a natureza.</q>
-                            Nós esperamos que ela tenha sucesso.</p>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <p>O Objetivo da WWF é:
+                                <q>Construir um futuro onde as pessoas vivam em harmonia com a natureza.</q>
+                                Nós esperamos que ela tenha sucesso.
+                            </p>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>abbr</h2>
-                    <p>
-                        A tag <code>&lt;abbr&gt;</code> define uma abreviação ou um acrónimo, por exemplo: HTML, CSS,
-                        OMS, etc.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>abbr</h2>
+                        <p>
+                            A tag <code>&lt;abbr&gt;</code> define uma abreviação ou um acrónimo, por exemplo: HTML,
+                            CSS,
+                            OMS, etc.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 A &lt;abbr title="Organização Mundial da Saúde"&gt;OMS&lt;/abbr&gt; foi fundada em 1948.
                     </code></pre>
-                    <div>
-                        A <abbr title="Organização Mundial da Saúde">OMS</abbr> foi fundada em 1948.
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            A <abbr title="Organização Mundial da Saúde">OMS</abbr> foi fundada em 1948.
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>address</h2>
-                    <p>
-                        A tag <code>&lt;address&gt;</code> define o contato de informação do autor de um documento ou
-                        artigo.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>address</h2>
+                        <p>
+                            A tag <code>&lt;address&gt;</code> define o contato de informação do autor de um documento
+                            ou
+                            artigo.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;address&gt;
     Written by &lt;a href="mailto:webmaster@example.com">Hans M. Boron&lt;/a&gt;
 &lt;/address&gt;
                     </code></pre>
-                    <div>
-                        Written by <a href="mailto:webmaster@example.com">Hans M. Boron</a>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            Written by <a href="mailto:webmaster@example.com">Hans M. Boron</a>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>cite</h2>
-                    <p>
-                        A tag <code>&lt;cite&gt;</code> define um título de alguma obra4 Exemplo: Uma música, um poema,
-                        um livro, uma pintura, etc.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>cite</h2>
+                        <p>
+                            A tag <code>&lt;cite&gt;</code> define um título de alguma obra4 Exemplo: Uma música, um
+                            poema,
+                            um livro, uma pintura, etc.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;address&gt;
      &lt;p&gt;&lt;cite&gt;O Grito&lt;/cite&gt; by Edward Munch. Pintado em 1893.&lt;/p&gt;
 &lt;/address&gt;
                     </code></pre>
-                    <div>
-                        <p><cite>O Grito</cite> by Edward Munch. Pintado em 1893.</p>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <p><cite>O Grito</cite> by Edward Munch. Pintado em 1893.</p>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>bdo</h2>
-                    <p>
-                        BDO significa Bi-Directional Override. Serve para mudar a direção do texto
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>bdo</h2>
+                        <p>
+                            BDO significa Bi-Directional Override. Serve para mudar a direção do texto
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;bdo dir="rtl"&gt;
     Este texto vai ir da direita para a esquerda.
 &lt;/bdo&gt;
                     </code></pre>
-                    <div>
-                        <bdo dir="rtl">
-                            Este texto vai ir da direita para a esquerda.
-                        </bdo>
-                    </div>
-                    <br>
-                </section>
+                        <div>
+                            <bdo dir="rtl">
+                                Este texto vai ir da direita para a esquerda.
+                            </bdo>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>code</h2>
-                    <p>
-                        A tag <code>&lt;code&gt;</code> define um pedaço de código de computador. O navegador usa a
-                        fonte monospace padrão.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>code</h2>
+                        <p>
+                            A tag <code>&lt;code&gt;</code> define um pedaço de código de computador. O navegador usa a
+                            fonte monospace padrão.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;code&gt;
     print(Hello World!)
 &lt;/code&gt;
                     </code></pre>
-                    <div>
-                        <code>
+                        <div>
+                            <code>
                             print(Hello World!)
                         </code>
-                    </div>
-                    <br>
-                </section>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>pre</h2>
-                    <p>
-                        A tag <code>&lt;pre&gt;</code> define texto pré-formatado. Preserva os espaços e quebras de
-                        linha.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>pre</h2>
+                        <p>
+                            A tag <code>&lt;pre&gt;</code> define texto pré-formatado. Preserva os espaços e quebras de
+                            linha.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;pre&gt;
     Preserva os    espaços
        e quebras
             de linha
 &lt;/pre&gt;
                     </code></pre>
-                    <div>
-        <pre>
+                        <div>
+                            <pre>
             Preserva os    espaços
                e quebras
                     de linha
         </pre>
-                    </div>
-                    <br>
-                </section>
+                        </div>
+                        <br>
+                    </section>
 
-                <section>
-                    <h2>kbd</h2>
-                    <p>
-                        A tag <code>&lt;kbd&gt;</code> define inputs de teclado. Normalmente mostrado com fonte
-                        monospace.
-                    </p>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="html rounded">
+                    <section>
+                        <h2>kbd</h2>
+                        <p>
+                            A tag <code>&lt;kbd&gt;</code> define inputs de teclado. Normalmente mostrado com fonte
+                            monospace.
+                        </p>
+                        <h4>Exemplo:</h4>
+                        <pre><code class="html rounded">
 &lt;p&gt;Pressione &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; para copiar texto.&lt;/p&gt;
                     </code></pre>
-                    <div>
-                        <p>Pressione <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar texto.</p>
-                    </div>
-                    <br>
-                </section>
-            </div>
-        </section>
+                        <div>
+                            <p>Pressione <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar texto.</p>
+                        </div>
+                        <br>
+                    </section>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="card-footer bg-principal px-3">
+        <div class="row text-center align-items-center">
+            <span class="text-light fst-italic">by Hans M. Boron</span><br>
+            <h1 class="ifpr">Instituto Federal do Paraná Campus Irati</h1><br>
+            <span class="text-light small">Analise e desenvolvimento de sistemas <em>Turma 2020</em>
+            </span>
+            <span class="text-light small">
+                Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
+                (42) 2104-0203
+            </span>
+        </div>
+    </footer>
+
+    <!--btn go to top-->
+    <div class="text-right ">
+        <button id="btn_top" onclick="toTop()" title="Ir ao topo">
+            <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    fill-rule="evenodd"></path>
+            </svg>
+        </button>
     </div>
-</main>
-
-<footer class="card-footer bg-principal px-3">
-    <div class="row text-center align-items-center">
-        <span class="text-light fst-italic">by Hans M. Boron</span><br>
-        <h1 class="ifpr">Instituto Federal do Paraná Campus Irati</h1><br>
-        <span class="text-light small">Analise e desenvolvimento de sistemas <em>Turma 2020</em>
-        </span>
-        <span class="text-light small">
-            Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
-            (42) 2104-0203
-        </span>
-    </div>
-</footer>
-
-<!--btn go to top-->
-<div class="text-right ">
-    <button id="btn_top" onclick="toTop()" title="Ir ao topo">
-        <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd"
-                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                  fill-rule="evenodd"></path>
-        </svg>
-    </button>
-</div>
 
 
-<script crossorigin="anonymous"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    <script crossorigin="anonymous" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<script src="js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
-
-
