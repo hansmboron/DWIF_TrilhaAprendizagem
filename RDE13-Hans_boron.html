@@ -15,100 +15,7 @@
     <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 
-    <title>DevWeb - BoxModel</title>
-    <style>
-        .box1 {
-            background-color: yellow;
-            position: static;
-            width: 400px;
-            height: 50px;
-            bottom: 0px;
-            /* nada acontece */
-        }
-
-        .box2 {
-            position: relative;
-            background-color: green;
-            color: white;
-            width: 400px;
-            height: 50px;
-            bottom: 50px;
-            /* move 50px para cima */
-            left: 410px;
-            /* move 410px para a direita */
-        }
-
-        .box3 {
-            position: absolute;
-            background-color: blue;
-            color: white;
-            width: 400px;
-            height: 50px;
-            bottom: 20px;
-            /* 20px a partir do fim da página */
-            left: 150px;
-            /* 150px a partir da esquerda da página */
-        }
-
-        .box4 {
-            position: fixed;
-            background-color: orange;
-            width: 400px;
-            height: 50px;
-            bottom: 40px;
-            right: 0px;
-        }
-
-        .box5 {
-            position: sticky;
-            background-color: brown;
-            color: white;
-            width: 400px;
-            height: 50px;
-            bottom: 40px;
-            left: 540px;
-        }
-
-        .layer1 {
-            position: relative;
-            background-color: darkcyan;
-            width: 70px;
-            height: 70px;
-            bottom: 0px;
-            left: 25px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 1;
-        }
-
-        .layer2 {
-            position: relative;
-            background-color: cadetblue;
-            width: 70px;
-            height: 70px;
-            bottom: 20px;
-            left: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 2;
-        }
-
-        .fl {
-            background-color: chartreuse;
-            width: 100px;
-            height: 40px;
-            float: left;
-        }
-
-        .fr {
-            background-color: chartreuse;
-            width: 100px;
-            height: 40px;
-            float: right;
-        }
-    </style>
+    <title>DevWeb - Layouts com CSS</title>
 
 </head>
 
@@ -119,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img alt="Trilha Aprendizagem Logo" class="d-inline-block align-top" height="55" id="logo"
-                        src="img/logo.png" title="Trilha Aprendizagem">
+                        src="img/logo.png" title="Olimpíada de Matemática dos Institutos Federais">
                     <span class="visually-hidden">Trilha Aprendizagem</span>
                 </a>
 
@@ -168,10 +75,11 @@
                                 <li><a class="dropdown-item fw-bold" href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
                                 <li><a class="dropdown-item fw-bold" href="RDE09-Hans_Boron.html">Multimídias</a></li>
                                 <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html">CSS</a></li>
-                                <li><a class="dropdown-item fw-bold" href="RDE11-Hans_Boron.html">CSS - Seletores
+                                <li><a class="dropdown-item fw-bold " href="RDE11-Hans_Boron.html">CSS - Seletores
                                         Personalizados</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE12-Hans_Boron.html">BoxModel</a></li>
                                 <li><a aria-current="page" class="dropdown-item fw-bold active"
-                                        href="RDE12-Hans_Boron.html">BoxModel</a></li>
+                                        href="RDE13-Hans_Boron.html">Layouts com CSS</a></li>
                             </ul>
                         </li>
                         <li>
@@ -199,164 +107,356 @@
                     <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
-                            <li aria-current="page" class="breadcrumb-item small active">CSS - BoxModel
+                            <li aria-current="page" class="breadcrumb-item small active">Layouts com CSS
                             </li>
                         </ol>
                     </nav>
                 </div>
                 <div class="card-body mb-3 mx-xl-5">
-                    <h1>CSS - BoxModel</h1>
+                    <h1>Layouts com CSS</h1>
                     <p>
-                        O modelo das caixas em CSS, descreve os boxes geradas pelos elementos HTML detalhando as opções
-                        de ajuste de margens, bordas, padding e conteúdo para cada elemento.
-                        Entender o Box Model é fundamental para construção de layout em sites.
+                        Veja 4 exemplos de layouts utilizando CSS puro.
                     </p>
-                    <h2 class="pt-4">Block-level</h2>
-                    <h4>Exemplo:</h4>
-                    <pre><code class="rounded html">
-&lt;div&gt;
-&lt;h1&gt; &lt;h2&gt; &lt;h3&gt; &lt;h4&gt; &lt;h5&gt; &lt;h5&gt;
-&lt;p&gt;
-&lt;ul&gt;
-&lt;ol&gt;
-&lt;table&gt;
-&lt;form&gt;
-&lt;fieldset&gt;
-&lt;li&gt;
+                    <h2 class="pt-4">Layout01</h2>
+
+                    <h4>HTML:</h4>
+                    <pre><code class="rounded html"></code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Na Trilha do Aprendizado&lt;/title&gt;
+    &lt;link rel="stylesheet" href="css/RDE14_Layout01.css"&gt;
+&lt;/head&gt;
+&lt;header&gt;
+    &lt;div class="logo"&gt;
+        &lt;picture&gt;
+            &lt;img src="img/logo.png" alt="logo"&gt;
+        &lt;/picture&gt;
+    &lt;/div&gt;
+    &lt;nav&gt;
+        &lt;div class="navegacao"&gt;
+            &lt;a href="#"&gt;Sobre&lt;/a&gt;
+            &lt;a href="#"&gt;Conteúdo&lt;/a&gt;
+            &lt;a href="#"&gt;O Projeto&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+    &lt;div class="principal"&gt;
+        &lt;div class="conteudo lateral"&gt;
+            &lt;h2&gt;Título 01&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortorsed accumsan convallis.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="conteudo central"&gt;
+            &lt;h2&gt;Título 02&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus html venenatis velit nec neque ultricies, eget elementum magna tristique Quisque vehicula, risus eget html aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div class="conteudo lateral"&gt;
+            &lt;h2&gt;Título 03&lt;/h2&gt;
+            &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus html venenatis velit nec neque ultricies, eget elementum magna tristique Quisque vehicula, risus eget html aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+    &lt;div class="rodape"&gt;
+        &lt;p&gt;© Todos os direitos reservados&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
                     </code></pre>
 
-                    <h2 class="pt-4">Inline Level</h2>
-                    <h4>Exemplos de elementos inline-level</h4>
-                    <pre><code class="rounded html">
-&lt;span&gt;
-&lt;a&gt;
-&lt;img&gt;
-&lt;td&gt;
-&lt;label&gt;
-&lt;input&gt;
-&lt;select&gt;
-&lt;textarea&gt;
-                    </code></pre>
-                    <h2 class="pt-4"> Inline-block</h2>
-                    <p>A CSS pode alterar o tipo do elemento, com a propriedade display, com os valores: block, inline
-                    </p>
-
-                    <h2 class="pt-4">Posicionamento</h2>
-                    <pre><code class="rounded html">
-&lt;div class="box1">Estático - permanece na posição em que foi definido&lt;/div&gt;
-&lt;div class="box2"&gt;Relativo - posicionado em relação onde foi definido&lt;/div&gt;
-&lt;div class="box3"&gt;Absoluto - pode ser posicionado em qualquer lugar do documento&lt;/div&gt;
-&lt;div class="box4"&gt;Fixed - permanece fixo durante a rolagem do conteúdo&lt;/div&gt;
-&lt;div class="box5"&gt;Sticky - permanece fixo durante a rolagem a partir de onde foi definido&lt;/div&gt;
-                    </code></pre>
+                    <h4>CSS:</h4>
                     <pre><code class="rounded css">
-.box1 {
-    background-color: yellow;
-    position: static;
-    width: 400px;
-    height: 50px;
-    bottom: 0px;  /* nada acontece */
-}
-.box2 {
-    position: relative;
-    background-color: green;
-    color: white;
-    width: 400px;
-    height: 50px;
-    bottom: 50px;  /* move 50px para cima */
-    left: 410px;  /* move 410px para a direita */
-}
-.box3 {
-    position: absolute;
-    background-color: blue;
-    color: white;
-    width: 400px;
-    height: 50px;
-    bottom: 20px; /* 20px a partir do fim da página */
-    left: 150px;  /* 150px a partir da esquerda da página */
-}
-.box4 {
-    position: fixed;
-    background-color: orange;
-    width: 400px;
-    height: 50px;
-    bottom: 40px;
-    right: 0px;
-}
-.box5 {
-    position: sticky;
-    background-color: brown;
-    color: white;
-    width: 400px;
-    height: 50px;
-    bottom: 40px;
-    left: 540px;
-}
-                    </code></pre>
-
-                    <div class="box1">Estático - permanece na posição em que foi definido</div>
-                    <div class="box2">Relativo - posicionado em relação onde foi definido</div>
-                    <div class="box3">Absoluto - pode ser posicionado em qualquer lugar do documento</div>
-                    <div class="box4">Fixed - permanece fixo durante a rolagem do conteúdo</div>
-                    <div class="box5">Sticky - permanece fixo durante a rolagem a partir de onde foi definido</div>
-
-                    <h2>Layers</h2>
-                    <pre><code class="rounded html">
-&lt;div class="layer1"&gt;Camada 1 &lt;/div&gt;
-&lt;div class="layer2"&gt;Camada 2 &lt;/div&gt;
-                    </code></pre>
-                    <pre><code class="rounded css">
-.layer1 {
-    position: relative;
-    background-color: darkcyan;
-    width: 70px;
-    height: 70px;
-    bottom: 0px;
-    left: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-}
-.layer2 {
-    position: relative;
-    background-color: cadetblue;
-    width: 70px;
-    height: 70px;
-    bottom: 20px;
-    left: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;  /* fica por cima da camada 1 já que o z-index é maior
-}
-                    </code></pre>
-                    <div class="layer1">Camada 1 </div>
-                    <div class="layer2">Camada 2 </div>
-
-                    <h2>Float</h2>
-                    <pre><code class="rounded html">
-&lt;div class="fl"&gt;Float left&lt;/div&gt;
-&lt;div class="fr"&gt;Float right&lt;/div&gt;
-                    </code></pre>
-                    <pre><code class="rounded css">
-.fl {
-    background-color: chartreuse;
-    width: 100px;
-    height: 40px;
-    float: left;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #0B1726, #1f3d64);
+    width: 90%;
+    margin: 0 auto;
 }
 
-.fr {
-    background-color: chartreuse;
-    width: 100px;
-    height: 40px;
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 40%;
+    padding-top: 40px;
+}
+
+.navegacao {
+    overflow: hidden;
+}
+
+.navegacao a {
     float: right;
+    display: block;
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    padding: 10px 10px;
 }
-                    </code></pre>
 
-                    <div class="fl">Float left</div>
-                    <div class="fr mb-5">Float right</div>
+.navegacao a:hover {
+    color: #e32936;
+    background-color: black;
+}
+
+.conteudo {
+    float: left;
+    margin: 15px 2px 25px 2px;
+    background-color: gainsboro;
+    width: 30.7%;
+    text-align: justify;
+    padding: 14px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #08101a98;
+}
+
+.rodape {
+    color: darkgray;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .principal, .conteudo {
+        width: 100%;
+        padding: 0;
+    }
+}                        
+                    </code></pre>
+                    <a href="RDE14-Layout01.html" target="_blank">
+                        <strong>Visualizar Layout 1</strong>
+                    </a>
+
+                    <h2 class="pt-4">Layout02</h2>
+                    <h4>CSS:</h4>
+                    <pre><code class="rounded css"></code>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #0B1726, #1f3d64);
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 40%;
+    padding-top: 40px;
+}
+
+.navegacao {
+    overflow: hidden;
+}
+
+.navegacao a {
+    float: right;
+    display: block;
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.navegacao a:hover {
+    color: #e32936;
+    background-color: black;
+}
+
+.conteudo {
+    float: left;
+    padding: 14px;
+}
+
+.conteudo.lateral {
+    width: 20%;
+    margin: 10px 2px 25px 2px;
+    height: 300px;
+    background-color: gainsboro;
+}
+
+.conteudo.central {
+    width: 52%;
+    height: 300px;
+    margin: 10px 2px 2px 2px;
+    background-color: gainsboro;
+}
+
+.principal h2 {
+    color: #2e4159;
+}
+
+.rodape {
+    color: darkgray;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .principal, .conteudo.central, .conteudo.lateral {
+        width: 100%;
+        padding: 0;
+    }
+}                        
+                    </code></pre>
+                    <a href="RDE14-Layout02.html" target="_blank">
+                        <strong>Visualizar Layout 2</strong>
+                    </a>
+
+                    <h2 class="pt-4">Layout03</h2>
+                    <h4>CSS:</h4>
+                    <pre><code class="rounded css"></code>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #0B1726, #1f3d64);
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 40%;
+    padding-top: 40px;
+}
+
+.navegacao {
+    overflow: hidden;
+}
+
+.navegacao a {
+    float: right;
+    display: block;
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.navegacao a:hover {
+    color: #e32936;
+    background-color: black;
+}
+
+.principal {
+    margin: 15px 2px 25px 2px;
+    background-color: gainsboro;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px #08101a98;
+}
+
+.principal h2 {
+    color: #2e4159;
+}
+
+.rodape {
+    color: darkgray;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .principal, .conteudo.central, .conteudo.lateral {
+        width: 100%;
+        padding: 0;
+    }
+}                        
+                    </code></pre>
+                    <a href="RDE14-Layout03.html" target="_blank">
+                        <strong>Visualizar Layout 3</strong>
+                    </a>
+
+                    <h2 class="pt-4">Layout04</h2>
+                    <h4>CSS:</h4>
+                    <pre><code class="rounded css"></code>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to bottom, #0B1726, #1f3d64);
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.logo img {
+    width: 40%;
+    padding-top: 40px;
+}
+
+.navegacao {
+    overflow: hidden;
+}
+
+.navegacao a {
+    float: right;
+    display: block;
+    color: rgb(173, 173, 173);
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+.navegacao a:hover {
+    color: #e32936;
+    background-color: black;
+}
+
+.conteudo.lateral, .conteudo.central {
+    margin: 15px 2px 25px 2px;
+    background-color: gainsboro;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 10px 10px #08101a98;
+}
+
+.principal h2 {
+    color: #2e4159;
+}
+
+.rodape {
+    color: darkgray;
+    font-size: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:800px) {
+    .principal, .conteudo.central, .conteudo.lateral {
+        width: 100%;
+        padding: 0;
+    }
+}                        
+                    </code></pre>
+                    <a href="RDE14-Layout04.html" target="_blank">
+                        <strong>Visualizar Layout 4</strong>
+                    </a>
+
 
                 </div>
             </section>
