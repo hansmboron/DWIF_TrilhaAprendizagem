@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
+    <!--    <link href="css/bootstrap.css" rel="stylesheet">-->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>DevWeb - Introdução JavaScript</title>
+
+</head>
+
+<body>
+    <!--HEADER-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Trilha Aprendizagem Logo" class="d-inline-block align-top" height="55" id="logo"
+                        src="img/logo.png" title="Olimpíada de Matemática dos Institutos Federais">
+                    <span class="visually-hidden">Trilha Aprendizagem</span>
+                </a>
+
+                <button aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#toggleMobileMenu" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
+                        <li>
+                            <a class="nav-link" href="index.html" title="Início">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                    </path>
+                                </svg>
+                                Página Inicial
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                                href="#" id="navbarDropdown" role="button" title="Materiais de Estudo">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                    </path>
+                                </svg>
+                                Conteúdos
+                            </a>
+                            <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
+                                <li><a class="dropdown-item fw-bold" href="RDE01-Internet.html">Internet</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE02-Conceitos.html">Conceitos Básicos</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE03-Hans_Boron.html">Introdução HTML5</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE04-Hans_Boron.html">Imagens e Listas</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE05-Hans_Boron.html">Hyperlinks</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE06-Hans_Boron.html">Versionamento de
+                                        código</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE07-Hans_Boron.html">Branches e
+                                        Hospedagem</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE09-Hans_Boron.html">Multimídias</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html">CSS</a></li>
+                                <li><a class="dropdown-item fw-bold " href="RDE11-Hans_Boron.html">CSS - Seletores
+                                        Personalizados</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE12-Hans_Boron.html">BoxModel</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE13-Hans_Boron.html">Layouts com CSS</a>
+                                </li>
+                                <li><a aria-current="page" class="dropdown-item fw-bold active"
+                                        href="RDE14-Hans_Boron.html">Introdução JavaScript</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="sobre.html" title="Sobre Mim">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                                Sobre Mim
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HEADER-->
+    <!--MAIN-->
+    <main class="container my-3 ">
+        <div class="col-12" id="mainCard">
+            <section class="card">
+                <div class="card-header pb-0">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
+                            <li aria-current="page" class="breadcrumb-item small active">Introdução JavaScript
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="card-body mb-3 mx-xl-5">
+                    <h1>Introdução JavaScript</h1>
+                    <p>
+                        <strong>JavaScript</strong> foi criada em 1995 pela Netscape em parceria com a Sun Mycrosystem
+                        com a finalidade de adicionar interatividade a uma página web.
+                    </p>
+
+                    <h2 class="pt-4">Inserção do JavaScript no HTML</h2>
+                    <h4>Incorporado:</h4>
+                    <pre><code class="rounded html">
+&lt;head&gt;
+    &lt;script rel="text/javascript"&gt;
+        comandos
+    &lt;/script&gt;
+&lt;/head&gt;
+                    </code></pre>
+
+                    <h4>Externo:</h4>
+                    <pre><code class="rounded html">
+&lt;script rel="text/javascript" src="externo.js"&gt;&lt;/script&gt;
+                    </code></pre>
+
+                    <h4>Atributo de Evento:</h4>
+                    <pre><code class="rounded html">
+&lt;body&gt;
+    &lt;button type="button" onclick="comandos"&gt;&lt;/button&gt;
+&lt;/body&gt;
+                    </code></pre>
+
+                    <h2 class="pt-4">Caixas de Diálogo JavaScript</h2>
+                    <figure class="figure" style="max-width:780px">
+                        <img class="figure-img img-fluid shadow-sm border rounded" src="img/dialogos.png"
+                            alt="Diálogos Javascript" />
+                    </figure>
+
+                    <h2 class="pt-4">Variáveis em JavaScript</h2>
+                    <pre><code class="rounded js">
+var n1, n2, soma, frase
+frase = "Exemplo de uma soma"
+n1 = 9
+n2 = 14.5
+soma = n1 + n2
+alert(frase)
+alert(soma)
+document.write("&lt;h2&gt;" + soma + "&lt;/h2&gt;")
+n1 = prompt("Digite um valor: ")
+n2 = prompt("Digite um valor: ")
+soma = parseFloat(n1) + parseFloat(n2)
+alert("O resultado da soma é " + soma)
+document.write("&lt;h2&gt;" + soma + "&lt;/h2&gt;")
+                    </code></pre>
+
+                    <h2 class="pt-4">Estruturas condicionais</h2>
+                    <pre><code class="rounded js">
+/* Elabore um programa em que solicite ao usuário dois números n1 e n2.
+Realize a subtração dos dois valores. O programa não deve exibir números negativos */
+
+var n1, n2, subtracao
+n1 = parseInt(prompt("Digite primeiro valor: "))
+n2 = parseInt(prompt("Digite segundo valor: "))
+if (n1 > n2) {
+    subtracao = n1 - n2
+    alert("O resultado é: " + subtracao)
+} else {
+    subtracao = n2 - n1
+    alert("O resultado é: " + subtracao)
+}
+                    </code></pre>
+                    <h2 class="pt-4">Laços de Repetição</h2>
+                    <h4>While:</h4>
+                    <pre><code class="rounded js">
+/* Permita ao usuário inserir um valor que exiba a tabuada */
+
+var tab, num, count = 0
+num = parseInt(prompt("Digite o valor da tabuada: "))
+
+while(count &lt; 11) {
+    tab = num * count
+    document.write("&lt;h2&gt;" + tab + "&lt;/h2&gt;")
+    count ++
+}
+                    </code></pre>
+                    <h4>For:</h4>
+                    <pre><code class="rounded js">
+/* Permita ao usuário inserir um valor que exiba a tabuada */
+
+var tab, num, count
+num = parseInt(prompt("Digite o valor da tabuada: "))
+
+for(count = 0; count &lt; 11; count ++) {
+    tab = num * count
+    document.write("&lt;h2&gt;" + tab + "&lt;/h2&gt;")
+}
+                    </code></pre>
+
+                    <h2 class="pt-4">Estruturas de Multipla Escolha</h2>
+                    <h4>Switch:</h4>
+                    <pre><code class="rounded js">
+/* Permita ao usuário inserir um valor que exiba a tabuada */
+
+var tab, num, count = 0, op
+num = parseInt(prompt("Digite o valor da tabuada: "))
+op = parseInt(prompt("Digite 1 para While ou 2 para For: "))
+
+switch(op) {
+    case 1: {
+        while(count &lt; 11) {
+            tab = num * count
+            document.write("&lt;h2&gt;" + tab + "&lt;/h2&gt;")
+            count ++
+        }
+        break
+    } 
+    case 2: {
+        for(count = 0; count &lt; 11; count ++) {
+            tab = num * count
+            document.write("&lt;h2&gt;" + tab + "&lt;/h2&gt;")
+        }
+        break
+    }
+    default: {
+        alert("Opção Inválida!")
+        break
+    }
+}
+                    </code></pre>
+
+                    <h2 class="pt-4">Arrays</h2>
+                    <pre><code class="rounded js">
+var v = [4, 8, 7, 6]
+alert(v[1])  /* 8 */
+v[1] = 5
+alert(v[1])  /* 5 */
+
+lista = ["Juquinha", 1880, "Rua A", "Curitiba", "PR", 80.5]
+var soma = lista[1] + lista[5]
+alert(soma)
+
+for (var i = 0; i &lt; lista.length; i ++) {
+    alert(lista[i])
+}
+                    </code></pre>
+
+                    <h2 class="pt-4">Funções</h2>
+                    <h4>Funções sem retorno:</h4>
+                    <pre><code class="rounded js">
+function somar(n1, n2) {
+    var r = n1 + n2
+    alert("Resultado: " + r)
+}
+
+somar(35, 10)  /* 'Resultado: 45' */
+somar(212, -14)  /* 'Resultado: 198' */
+                    </code></pre>
+                    <h4>Funções com retorno:</h4>
+                    <pre><code class="rounded js">
+function subtrair(n1, n2) {
+    var r = n1 - n2
+    return r
+}
+
+alert(subtrair(35, 10))  /* 25 */
+alert(subtrair(212, -14))  /* 226 */
+                    </code></pre>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="card-footer bg-principal px-3">
+        <div class="row text-center align-items-center">
+            <span class="text-light fst-italic">by Hans M. Boron</span><br>
+            <h1 class="ifpr">Instituto Federal do Paraná Campus Irati</h1><br>
+            <span class="text-light small">Analise e desenvolvimento de sistemas <em>Turma 2020</em>
+            </span>
+            <span class="text-light small">
+                Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
+                (42) 2104-0203
+            </span>
+        </div>
+    </footer>
+
+    <!--btn go to top-->
+    <div class="text-right ">
+        <button id="btn_top" onclick="toTop()" title="Ir ao topo">
+            <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    fill-rule="evenodd"></path>
+            </svg>
+        </button>
+    </div>
+
+
+    <script crossorigin="anonymous" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
