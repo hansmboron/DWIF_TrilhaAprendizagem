@@ -1,142 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
+    <!--    <link href="css/bootstrap.css" rel="stylesheet">-->
+    <link href="css/main.css" rel="stylesheet">
 
-    <title>Sobre mim</title>
+    <title>Projeto na Trilha do Aprendizado</title>
 </head>
+
 <body>
-<figure>
-    <a href="img/hans.png"><img alt="imagem perfil" height="200" src="img/hans.png"></a>
-</figure>
+    <!--HEADER-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Trilha Aprendizagem Logo" class="d-inline-block align-top" height="55" id="logo"
+                        src="img/logo.png" title="Olimpíada de Matemática dos Institutos Federais">
+                    <span class="visually-hidden">Trilha Aprendizagem</span>
+                </a>
 
-<h1>Hans Mateus Boron</h1>
+                <button aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#toggleMobileMenu" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
+                        <li>
+                            <a class="nav-link" href="index.html" title="Início">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                    </path>
+                                </svg>
+                                Página Inicial
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                id="navbarDropdown" role="button" title="Materiais de Estudo">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                    </path>
+                                </svg>
+                                Conteúdos
+                            </a>
+                            <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
+                                <li><a class="dropdown-item fw-bold" href="RDE01-Internet.html">Internet</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE02-Conceitos.html">Conceitos Básicos</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE03-Hans_Boron.html">Introdução HTML5</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE04-Hans_Boron.html">Imagens e Listas</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE05-Hans_Boron.html">Hyperlinks</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE06-Hans_Boron.html">Versionamento de
+                                        código</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE07-Hans_Boron.html">Branches e
+                                        Hospedagem</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE09-Hans_Boron.html">Multimídias</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html">CSS</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE11-Hans_Boron.html">CSS - Seletores
+                                        Personalizados</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE12-Hans_Boron.html">BoxModel</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE13-Hans_Boron.html">Layouts com CSS</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE15-Hans_Boron.html">Introdução
+                                        JavaScript</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE16-Hans_Boron.html">DOM</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <a aria-current="page" class="nav-link active" href="sobre.html" title="Sobre Mim">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                                Sobre Mim
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HEADER-->
+    <!--MAIN-->
+    <main class="container my-3 ">
+        <div class="col-12" id="mainCard">
+            <section class="card">
+                <div class="card-header pb-0">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
+                            <li aria-current="page" class="breadcrumb-item small active">Sobre Mim</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="card-body mb-3 mx-xl-5">
+                    <figure>
+                        <a href="img/hans.png"><img alt="imagem perfil" height="200" src="img/hans.png"></a>
+                    </figure>
 
-<h3>Biografia</h3>
-<p>
-    Entusiasta no desenvolvimento multiplataforma com o Framework Flutter principalmente e tecnologias Open Source.
-    A cerca de dois anos atrás descobri meu gosto por programação ao qual entrei de cabeça com bastante determinação
-    querendo todo dia aprender coisas novas.
-</p>
-<br>
+                    <h1>Hans Mateus Boron</h1>
 
-<h3>Formação Acadêmica</h3>
-<dl>
-    <dt>
-        Colégio Estadual Rio do Couro
-        Diploma Ensino Médio
-    </dt>
-    <dd>2009 – 2012</dd>
-    <dt>
-        CEFEP Presidente Costa e Silva
-        Diploma Técnico em Florestas
-    </dt>
-    <dd>2014 – 2015</dd>
-    <dt>
-        Colegio Estadual Duque de Caxias
-        Diploma Técnico em Informática
-    </dt>
-    <dd>2019 – 2020</dd>
-</dl>
-<br>
+                    <h3>Biografia</h3>
+                    <p>
+                        Entusiasta no desenvolvimento multiplataforma com o Framework Flutter principalmente e
+                        tecnologias Open Source.
+                        A cerca de dois anos atrás descobri meu gosto por programação ao qual entrei de cabeça com
+                        bastante determinação
+                        querendo todo dia aprender coisas novas.
+                    </p>
+                    <br>
 
-<h3>Experiência Profissional</h3>
-<dl>
-    <dt>
-        Estágio Supervisionado – JP Ambiental
-        Área de atuação: Regulações Ambientais, CAR (Cadastro Ambiental Rural), Retificação de lotes Urbanos.
-    </dt>
-    <dd>jan. de 2015 – fev. de 2015</dd>
-</dl>
-<dl>
-    <dt>
-        Estágio Supervisionado – Plantar Ltda. Topografia – Irati-PR
-        Área de atuação: georreferenciamento, medições de terra e elaboração de mapas. (Carga horária de 78 horas)
-    </dt>
-    <dd>jun. de 2014 – jul. de 2014</dd>
-</dl>
-<br>
+                    <h3>Formação Acadêmica</h3>
+                    <dl>
+                        <dt>
+                            Colégio Estadual Rio do Couro
+                            Diploma Ensino Médio
+                        </dt>
+                        <dd>2009 – 2012</dd>
+                        <dt>
+                            CEFEP Presidente Costa e Silva
+                            Diploma Técnico em Florestas
+                        </dt>
+                        <dd>2014 – 2015</dd>
+                        <dt>
+                            Colegio Estadual Duque de Caxias
+                            Diploma Técnico em Informática
+                        </dt>
+                        <dd>2019 – 2020</dd>
+                    </dl>
+                    <br>
 
-<h3>Projetos Realizados</h3>
-<p>
-    <strong>Calculadora Python PyQt5</strong><br>
-    Calculadora poderosa feita com PyQt5.<br> Link: <a href="https://github.com/hansmboron/Calculadora_Python"
-                                                       target="_blank">github</a>
-</p>
-<figure>
-    <a href="https://raw.githubusercontent.com/hansmboron/Calculadora_Python/main/demo.gif"><img
-            alt="demo calculadora python"
-            height="220" src="https://raw.githubusercontent.com/hansmboron/Calculadora_Python/main/demo.gif"></a>
-</figure>
-<p>
-    <strong>Let's Cook</strong><br>
-    Aplicativo feito em Flutter com receitas organizadas por categoria com recursos de filtros personalizados e
-    favoritos. Disponível download para Linux <br> Link: <a href="https://github.com/hansmboron/let-s-cook"
-                                                            target="_blank">github</a>
-</p>
-<figure>
-    <a href="https://raw.githubusercontent.com/hansmboron/let-s-cook/master/demo.gif"><img
-            alt="demo app lets-cook" height="300"
-            src="https://raw.githubusercontent.com/hansmboron/let-s-cook/master/demo.gif"></a>
-</figure>
-<p>
-    <strong>Site Mehsys</strong><br>
-    Site para baixar o app Mehsys para Android, Windows e Linux.<br> Link: <a
-        href="https://github.com/hansmboron/Mehsys-tail" target="_blank">github</a><br>Site:<a
-        href="https://mehsys.site" target="_blank">mehsys.site</a>
-</p>
-<figure>
-    <a href="img/mehsys.png"><img alt="demo calculadora python" height="220" src="img/mehsys.png"></a>
-</figure>
-<br>
+                    <h3>Experiência Profissional</h3>
+                    <dl>
+                        <dt>
+                            Estágio Supervisionado – JP Ambiental
+                            Área de atuação: Regulações Ambientais, CAR (Cadastro Ambiental Rural), Retificação de lotes
+                            Urbanos.
+                        </dt>
+                        <dd>jan. de 2015 – fev. de 2015</dd>
+                    </dl>
+                    <dl>
+                        <dt>
+                            Estágio Supervisionado – Plantar Ltda. Topografia – Irati-PR
+                            Área de atuação: georreferenciamento, medições de terra e elaboração de mapas. (Carga
+                            horária de 78 horas)
+                        </dt>
+                        <dd>jun. de 2014 – jul. de 2014</dd>
+                    </dl>
+                    <br>
 
-<h3>Hobbies</h3>
-<ul>
-    <li>Andar de Bicicleta</li>
-    <li>Assistir Séries</li>
-</ul>
-<br>
+                    <h3>Projetos Realizados</h3>
+                    <p>
+                        <strong>Calculadora Python PyQt5</strong><br>
+                        Calculadora poderosa feita com PyQt5.<br> Link: <a
+                            href="https://github.com/hansmboron/Calculadora_Python" target="_blank">github</a>
+                    </p>
+                    <figure>
+                        <a href="https://raw.githubusercontent.com/hansmboron/Calculadora_Python/main/demo.gif"><img
+                                alt="demo calculadora python" height="220"
+                                src="https://raw.githubusercontent.com/hansmboron/Calculadora_Python/main/demo.gif"></a>
+                    </figure>
+                    <p>
+                        <strong>Let's Cook</strong><br>
+                        Aplicativo feito em Flutter com receitas organizadas por categoria com recursos de filtros
+                        personalizados e
+                        favoritos. Disponível download para Linux <br> Link: <a
+                            href="https://github.com/hansmboron/let-s-cook" target="_blank">github</a>
+                    </p>
+                    <figure>
+                        <a href="https://raw.githubusercontent.com/hansmboron/let-s-cook/master/demo.gif"><img
+                                alt="demo app lets-cook" height="300"
+                                src="https://raw.githubusercontent.com/hansmboron/let-s-cook/master/demo.gif"></a>
+                    </figure>
+                    <p>
+                        <strong>Site Mehsys</strong><br>
+                        Site para baixar o app Mehsys para Android, Windows e Linux.<br> Link: <a
+                            href="https://github.com/hansmboron/Mehsys-tail" target="_blank">github</a><br>Site:<a
+                            href="https://mehsys.site" target="_blank">mehsys.site</a>
+                    </p>
+                    <figure>
+                        <a href="img/mehsys.png"><img alt="demo calculadora python" height="220"
+                                src="img/mehsys.png"></a>
+                    </figure>
+                    <br>
 
-<h3>Redes Sociais</h3>
-<ul>
-    <li>
-        <a href="https://www.linkedin.com/in/hansmateusboron/" target="_blank">
-            <svg height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    <h3>Hobbies</h3>
+                    <ul>
+                        <li>Andar de Bicicleta</li>
+                        <li>Assistir Séries</li>
+                    </ul>
+                    <br>
+
+                    <h3>Redes Sociais</h3>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/hansmateusboron/" target="_blank">
+                                <svg height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                LinkedIn</a>
+                        </li>
+                        <li>
+                            <a href="https://bit.ly/2DaQTtq" target="_blank">
+                                <svg height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                                </svg>
+                                YouTube</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/hansmboron" target="_blank">
+                                <svg height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z" />
+                                </svg>
+                                GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://t.me/hansboron">
+                                <svg aria-hidden="true" focusable="false" height="20px"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                    viewBox="0 0 32 32" width="20px" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <path
+                                        d="M16 .5C7.437.5.5 7.438.5 16S7.438 31.5 16 31.5c8.563 0 15.5-6.938 15.5-15.5S24.562.5 16 .5zm7.613 10.619l-2.544 11.988c-.188.85-.694 1.056-1.4.656l-3.875-2.856l-1.869 1.8c-.206.206-.381.381-.781.381l.275-3.944l7.181-6.488c.313-.275-.069-.431-.482-.156l-8.875 5.587l-3.825-1.194c-.831-.262-.85-.831.175-1.231l14.944-5.763c.694-.25 1.3.169 1.075 1.219z" />
+                                </svg>
+                                Telegram</a>
+                        </li>
+                    </ul>
+                    <br>
+
+                    <p>Email: <a href="mailto:hansmateusboron@gmail.com" target="_blank">hansmateusboron@gmail.com</a>
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="card-footer bg-principal px-3">
+        <div class="row text-center align-items-center">
+            <span class="text-light fst-italic">by Hans M. Boron</span><br>
+            <h1 class="ifpr">Instituto Federal do Paraná Campus Irati</h1><br>
+            <span class="text-light small">Analise e desenvolvimento de sistemas <em>Turma 2020</em>
+            </span>
+            <span class="text-light small">
+                Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
+                (42) 2104-0203
+            </span>
+        </div>
+    </footer>
+
+    <!--btn go to top-->
+    <div class="text-right ">
+        <button id="btn_top" onclick="toTop()" title="Ir ao topo">
+            <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    fill-rule="evenodd"></path>
             </svg>
-            LinkedIn</a>
-    </li>
-    <li>
-        <a href="https://bit.ly/2DaQTtq" target="_blank">
-            <svg height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
-            </svg>
-            YouTube</a>
-    </li>
-    <li>
-        <a href="https://github.com/hansmboron" target="_blank">
-            <svg height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/>
-            </svg>
-            GitHub</a>
-    </li>
-    <li>
-        <a href="https://t.me/hansboron">
-            <svg aria-hidden="true" focusable="false" height="20px"
-                 preserveAspectRatio="xMidYMid meet" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" viewBox="0 0 32 32"
-                 width="20px"
-                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <path d="M16 .5C7.437.5.5 7.438.5 16S7.438 31.5 16 31.5c8.563 0 15.5-6.938 15.5-15.5S24.562.5 16 .5zm7.613 10.619l-2.544 11.988c-.188.85-.694 1.056-1.4.656l-3.875-2.856l-1.869 1.8c-.206.206-.381.381-.781.381l.275-3.944l7.181-6.488c.313-.275-.069-.431-.482-.156l-8.875 5.587l-3.825-1.194c-.831-.262-.85-.831.175-1.231l14.944-5.763c.694-.25 1.3.169 1.075 1.219z"/>
-            </svg>
-            Telegram</a>
-    </li>
-</ul>
-<br>
+        </button>
+    </div>
 
-<p>Email: <a href="mailto:hansmateusboron@gmail.com" target="_blank">hansmateusboron@gmail.com</a></p>
-<a href="index.html">Voltar</a>
 
+    <script crossorigin="anonymous" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
