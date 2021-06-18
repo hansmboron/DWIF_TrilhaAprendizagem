@@ -1,83 +1,202 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <link href="../RDE07/img/favicon.ico" rel="icon" type="image/x-icon">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" rel="stylesheet">
+    <!--    <link href="css/bootstrap.css" rel="stylesheet">-->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
-    <title>Sistema de versionamento de código</title>
+    <title>DevWeb - Tags HTML5</title>
 </head>
+
 <body>
-<h1 style="color: darkgreen">Softwares de Versionamento</h1>
-<h2>O que é Git?</h2>
-<p>
-    O <strong>Git</strong> é um sistema open-source de controle de versão utilizado pela grande maioria dos
-    desenvolvedores atualmente. Com ele podemos criar todo histórico de alterações no código do nosso projeto e
-    facilmente voltar para qualquer ponto para saber como o código estava naquela data.
-    O git foi criado por <em>Linus Torwalds</em> o famoso criador do Linux.
-</p>
-<figure>
-    <img alt="logo git" src="img/git.png">
-</figure>
-<h3>Alguns dos principais comandos do Git</h3>
-<ul>
-    <li><strong>commit</strong> - Torna permanente um conjunto de alterações em um repositório.</li>
-    <li><strong>push</strong> - Envia alterações para o servidor no repositório remoto.</li>
-    <li><strong>fetch</strong> - Verifica se seu repositório local esta em sincronia com o remoto.</li>
-    <li><strong>pull</strong> - Sincroniza o repositório local com o remoto atualizando as versões.</li>
-</ul>
-<br>
+    <!--HEADER-->
+    <header id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-0" id="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img alt="Trilha Aprendizagem Logo" class="d-inline-block align-top" height="55" id="logo"
+                        src="img/logo.png" title="Olimpíada de Matemática dos Institutos Federais">
+                    <span class="visually-hidden">Trilha Aprendizagem</span>
+                </a>
 
-<h2>O que é GitHub?</h2>
-<p>
-    O <strong>Github</strong> é um repositório remoto, criado como um serviço online de hospedagem de repositórios do
-    Git.<br>Link: <a href="https://github.com" target="_blank">GitHub</a>
-</p>
-<figure>
-    <img alt="logo github" src="img/github.png">
-</figure>
-<h3>Vantagens em utilizar o Git e o GitHub</h3>
-<ul>
-    <li><strong>Trabalho em equipe</strong> - Pode trabalhar com várias pessoas ao mesmo tempo em um mesmo repositório sem problemas.</li>
-    <li><strong>Segurança</strong> - Se estragar seu computador você não perde as alterações que fez no repositório já que uma cópia está no servidor remoto do GitHub.</li>
-    <li><strong>Gestão de mudanças</strong> - Se você fizer alterações desastrosas no seu código, poderá 'voltar no tempo' para algum commit anterior onde seu projeto estava funcionando corretamente.</li>
-</ul>
-<br>
-<h3>GitHub Hans M. Boron: <a href="https://github.com/hansmboron" target="_blank">https://github.com/hansmboron</a></h3>
-<a href="index.html">Voltar</a>
+                <button aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#toggleMobileMenu" data-bs-toggle="collapse" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="navbar-nav ms-auto text-center fw-bold align-items-center">
+                        <li>
+                            <a class="nav-link" href="index.html" title="Início">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z">
+                                    </path>
+                                </svg>
+                                Página Inicial
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                                href="#" id="navbarDropdown" role="button" title="Materiais de Estudo">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                    </path>
+                                </svg>
+                                Conteúdos
+                            </a>
+                            <ul aria-labelledby="navbarDropdown" class="dropdown-menu dropdown-menu-dark pt-2">
+                                <li><a class="dropdown-item fw-bold" href="RDE01-Internet.html">Internet</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE02-Conceitos.html">Conceitos Básicos</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE03-Hans_Boron.html">Introdução HTML5</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE04-Hans_Boron.html">Imagens e Listas</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE05-Hans_Boron.html">Hyperlinks</a></li>
+                                <li><a aria-current="page" class="dropdown-item fw-bold active"
+                                        href="RDE06-Hans_Boron.html">Versionamento de
+                                        código</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE07-Hans_Boron.html">Branches e
+                                        Hospedagem</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE08-Hans_Boron.html">Tags HTML5</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE09-Hans_Boron.html">Multimídias</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE10-Hans_Boron.html">CSS</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE11-Hans_Boron.html">CSS - Seletores
+                                        Personalizados</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE12-Hans_Boron.html">BoxModel</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE13-Hans_Boron.html">Layouts com CSS</a>
+                                </li>
+                                <li><a class="dropdown-item fw-bold" href="RDE15-Hans_Boron.html">Introdução
+                                        JavaScript</a></li>
+                                <li><a class="dropdown-item fw-bold" href="RDE16-Hans_Boron.html">DOM</a>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="sobre.html" title="Sobre Mim">
+                                <svg fill="currentColor" height="24" viewBox="0 0 20 20" width="24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path clip-rule="evenodd"
+                                        d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                                        fill-rule="evenodd"></path>
+                                </svg>
+                                Sobre Mim
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--HEADER-->
+    <!--MAIN-->
+    <main class="container my-3 ">
+        <div class="col-12" id="mainCard">
+            <section class="card">
+                <div class="card-header pb-0">
+                    <nav aria-label="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item small"><a href="index.html">Home</a></li>
+                            <li aria-current="page" class="breadcrumb-item small active">Versionamento de Código</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="card-body mb-3 mx-xl-5">
+                    <h1>Softwares de Versionamento</h1>
+                    <h2>O que é Git?</h2>
+                    <p>
+                        O <strong>Git</strong> é um sistema open-source de controle de versão utilizado pela grande
+                        maioria dos
+                        desenvolvedores atualmente. Com ele podemos criar todo histórico de alterações no código do
+                        nosso projeto e
+                        facilmente voltar para qualquer ponto para saber como o código estava naquela data.
+                        O git foi criado por <em>Linus Torwalds</em> o famoso criador do Linux.
+                    </p>
+                    <figure>
+                        <img alt="logo git" src="img/git.png">
+                    </figure>
+                    <h3>Alguns dos principais comandos do Git</h3>
+                    <ul>
+                        <li><strong>commit</strong> - Torna permanente um conjunto de alterações em um repositório.</li>
+                        <li><strong>push</strong> - Envia alterações para o servidor no repositório remoto.</li>
+                        <li><strong>fetch</strong> - Verifica se seu repositório local esta em sincronia com o remoto.
+                        </li>
+                        <li><strong>pull</strong> - Sincroniza o repositório local com o remoto atualizando as versões.
+                        </li>
+                    </ul>
+                    <br>
 
-<hr>
-<footer class="card-footer bg-principal px-3">
-    <div class="row text-center align-items-center">
-        <span class="text-light fst-italic">by Hans M. Boron</span><br>
-        <h1 class="ifpr">Instituto Federal do Paraná Campus Irati</h1><br>
-        <span class="text-light small">Analise e desenvolvimento de sistemas <em>Turma 2020</em>
-        </span>
-        <span class="text-light small">
-            Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
-            (42) 2104-0203
-        </span>
+                    <h2>O que é GitHub?</h2>
+                    <p>
+                        O <strong>Github</strong> é um repositório remoto, criado como um serviço online de hospedagem
+                        de repositórios do
+                        Git.<br>Link: <a href="https://github.com" target="_blank">GitHub</a>
+                    </p>
+                    <figure>
+                        <img alt="logo github" src="img/github.png">
+                    </figure>
+                    <h3>Vantagens em utilizar o Git e o GitHub</h3>
+                    <ul>
+                        <li><strong>Trabalho em equipe</strong> - Pode trabalhar com várias pessoas ao mesmo tempo em um
+                            mesmo repositório sem problemas.</li>
+                        <li><strong>Segurança</strong> - Se estragar seu computador você não perde as alterações que fez
+                            no repositório já que uma cópia está no servidor remoto do GitHub.</li>
+                        <li><strong>Gestão de mudanças</strong> - Se você fizer alterações desastrosas no seu código,
+                            poderá 'voltar no tempo' para algum commit anterior onde seu projeto estava funcionando
+                            corretamente.</li>
+                    </ul>
+                    <br>
+                    <h3>GitHub Hans M. Boron: <a href="https://github.com/hansmboron"
+                            target="_blank">https://github.com/hansmboron</a></h3>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <footer class="card-footer bg-principal px-3">
+        <div class="row text-center align-items-center">
+            <span class="text-light fst-italic">by Hans M. Boron</span><br>
+            <h1 class="ifpr">Instituto Federal do Paraná Campus Irati</h1><br>
+            <span class="text-light small">Analise e desenvolvimento de sistemas <em>Turma 2020</em>
+            </span>
+            <span class="text-light small">
+                Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200,
+                (42) 2104-0203
+            </span>
+        </div>
+    </footer>
+
+    <!--btn go to top-->
+    <div class="text-right ">
+        <button id="btn_top" onclick="toTop()" title="Ir ao topo">
+            <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
+                <path clip-rule="evenodd"
+                    d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+                    fill-rule="evenodd"></path>
+            </svg>
+        </button>
     </div>
-</footer>
-
-<!--btn go to top-->
-<div class="text-right ">
-    <button id="btn_top" onclick="toTop()" title="Ir ao topo">
-        <svg fill="currentColor" height="30" viewBox="0 0 20 20" width="30" xmlns="http://www.w3.org/2000/svg">
-            <path clip-rule="evenodd"
-                  d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
-                  fill-rule="evenodd"></path>
-        </svg>
-    </button>
-</div>
 
 
-<script crossorigin="anonymous"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+    <script crossorigin="anonymous" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
-<script src="js/main.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
